@@ -1,29 +1,34 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage{lipsum}
 \usepackage{fancyhdr}
-\usepackage[margin=1.1 in]{geometry}
+\usepackage[margin=0.7 in]{geometry}
 \usepackage{layout}
 \usepackage{sectsty}
+\usepackage{titlesec}
 
 \pagestyle{fancy}
 \lhead{\textbf{Kamran Amini} \\ Mobile: (+98) 935 45 92 265 \\ Email: kam.cpp@gmail.com}
-\rhead{\parbox[b][5mm][t]{0.5\textwidth}{\raggedleft Page \thepage}}
+\rhead{\parbox[b][4mm][t]{0.5\textwidth}{\raggedleft Page \thepage} \\ \today}
+\cfoot{}
 \renewcommand{\headrulewidth}{1.0pt}
 \renewcommand{\footrulewidth}{0.0pt}
 
 \setcounter{secnumdepth}{0}
 
 \sectionfont{\fontsize{12}{15}\selectfont}
-\setlength{\headsep}{30pt}
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 \begin{document}
 
 \thispagestyle{fancy}
 
 \section{IN SUMMARY}
-As a highly active, motivated and 'computer science loyal' professional software architect with more than of 10 years of experience in development, analysis, design and architecting large scale, national and international projects, my skills are not limited to a specific development platform and my hybrid distributed multi-tier architectural solutions vast from back-end services written in C/C++, Java or Python to front-end applications written in C/C++, Java or even deployed on Web, with consideration of critical architectural factors like Distribution of Data and Computation across multiple domains and clusters, Fault Tolerance of services, High Availability of services, System's Single Points of Failure, overall Performance and Efficiency of the system, Security factors and hardening these factors across the system's domains, etc. As an architect of national projects, I've always faced strict and risky conditions which Security, Data Consistency and Data Correctness have been always very important factors. As an example, architecture of Distributed ePassport Issuance System (Kawthar System) for Iran's Ministry of Foreign Affairs, was led by me and it is operating world wide in Iran's Consular Offices and Embassies in more than of 70 countries.
+As a highly active and motivated professional software architect with more than of 10 years of experience in analysis, design, development and architecting large scale, national and international projects, my skills are not limited to a specific development platform and my solutions include a variety of technologies based on C/C++, Java or even Python. As an architect of national projects, I've always faced strict and risky conditions which security, performance, data consistency, data correctness, distribution of resources, fault tolerance, high availability, authorization and authentication have always been important factors. As an example, I've designed the architecture of Kawthar ePassport Issuance System for Iran's Ministry of Foreign Affairs and it is operating world wide in more than of 70 countries.
 
-\rule {14cm}{0.4pt}
+% \rule {14cm}{0.4pt}
 
 \section{EMPLOYMENT EXPERIENCES}
 
@@ -53,7 +58,7 @@ As a highly active, motivated and 'computer science loyal' professional software
      \item \small BigData Solutions
      \item \small Public Key Infrastructure
      \item \small Security Tokens
-     \item \small Embedded Programming (Raspberry Pi, 
+     \item \small Embedded Programming (Raspberry Pi, Arduino, AVR)
   \end{itemize}
   \setlength{\leftskip}{0pt}
   \setlength{\rightskip}{0cm}
@@ -115,6 +120,8 @@ As a highly active, motivated and 'computer science loyal' professional software
   \setlength{\leftskip}{0.5cm}
   \setlength{\rightskip}{1cm}
   \begin{itemize}
+    \setlength{\rightskip}{2cm}
+    \setlength\itemsep{0em}
 		\item \small \textit{SEPDCo Gas Network Simulator System} \\
      Working on a gas network and pipeline designer and simulator application written entirely in C++ using Qt framework. I was developer for the desktop application which was written in C++ and Qt View Framework. I used Qt View Framework classes like QWidget, QMainWindow, QGraphicsScene, QGraphicsView alongside signals and slots with all other needed concepts in Qt. The application had no database and everything was serialized using XML or Binary formatters and written to a file. We were using Microsoft Visual Studio 2008 for developing the project.
   \end{itemize}
@@ -126,6 +133,8 @@ As a highly active, motivated and 'computer science loyal' professional software
   \setlength{\rightskip}{1cm}
   We used Microsoft Visual Studio 2008 as our primary development IDE and Microsoft Visual Source Safe 2005 for our source version control system. Project types were varied from Windows From applications to ASP.NET Web Forms and WCF Services.
   \begin{itemize}
+    \setlength{\rightskip}{2cm}
+    \setlength\itemsep{0em}
 		\item \small \textit{SeptaNSF; A .NET based Framework} \\
 			This was a .NET based framework implemented for internal usages and later became a product. It also had a code generator which was able to generate Business Logic Layer entities and their adapters. It was entirely written in C\#.NET 3.5 and I was one of its developers and designers. I was developer and designer for classes related to WCF services, classes related to Inter-Process Communications like Sockets, Pipes and classes related to mathematical concepts related to cryptography. \\
 		\item \small \textit{\texttt{www.1st.ir} B2B Portal} \\
@@ -145,6 +154,8 @@ As a highly active, motivated and 'computer science loyal' professional software
   \setlength{\leftskip}{0.5cm}
   \setlength{\rightskip}{1cm}
 	\begin{itemize}
+	  \setlength{\rightskip}{2cm}
+    \setlength\itemsep{0em}
 		\item \small \textit{Isfahan Province Electricity Distribution Center, 121 Call Center} \\
 		This was the same project at previous company, Aramin IT, which was transferred to Shabakeh Pardaz Rayaneh Co. and I moved to new company to continue to work on the project. \\
 		\item \small \textit{Recording and Archiving System at Isfahan Central Jails Organization} \\
@@ -157,13 +168,15 @@ As a highly active, motivated and 'computer science loyal' professional software
   \setlength{\leftskip}{0.5cm}
   \setlength{\rightskip}{1cm}
   \begin{itemize}
+    \setlength{\rightskip}{2cm}
+    \setlength\itemsep{0em}
     \item \small \textit{Isfahan Province Electricity Distribution Center, 121 Call Center} \\					
 		This was a set of projects using Visual C++ and C\#.NET which they were responsible for handling calls at Isfahan Electricity Distribution Center. There was a service written in C++ which it had to monitor a Panasonic TD 200 call center. The service was using TAPI API for controlling the call center. Also, there were some desktop applications written in C\#.NET which they allowed human agents and managers to monitor, accept, reject and redirect the calls. Database system used for this project was Micrsoft SQL Server 2005.
 	\end{itemize}
   \setlength{\leftskip}{0pt}
   \setlength{\rightskip}{0cm}
 
-\rule {14cm}{0.4pt}
+% \rule {14cm}{0.4pt}
 
 \section{EDUCATION}
 
@@ -172,11 +185,13 @@ University of Isfahan \\
 Isfahan, Iran \\
 \textbf{Bachelor of Software Engineering}
 
-\rule {14cm}{0.4pt}
+% \rule {14cm}{0.4pt}
 
 \section{SCIENTIFIC AND PROFESSIONAL SKILLS}
 
 \begin{itemize}
+  \setlength{\rightskip}{2cm}
+  \setlength\itemsep{0em}
   \item \small \textit {Computer Science} \\
   Data Structures, Algorithm Design, Automata Theory, Turing Machine and Computation Theory, Linear and Abstract Algebra, Information Theory, Cryptography, Quantum Cryptography and Key Distribution, Quantum Computation, Public Key Infrastructure, Artificial Intelligence and Machine Learning,  Relational Databases, Graph Databases, Key-Value Databases, File Systems, Operating Systems, Kernel Architecture, Logical Circuits, Digital Circuits, Analogue Circuits, etc
   \item \small \textit {Programming Languages}:
@@ -191,8 +206,18 @@ Isfahan, Iran \\
   MVP, Agile methodologies (Scrum), RUP, etc
 \end{itemize}
 
-\rule {14cm}{0.4pt}
+% \rule {14cm}{0.4pt}
 
 \section{HOBBIES}
+  \begin{itemize}
+    \setlength{\rightskip}{2cm}
+    \setlength\itemsep{0em}
+    \item \small \textit{Mathematics} Linear and Abstract Algebra, Probability Theory, Information Theory
+	  \item \small \textit{Philosophy} Western Philosophy, Socilogy, Economics, Politics and Humanities
+	  \item \small \textit{Physics} Quantum Physics, Quantum Mechanics, Particle Physics, Relativity, Theory of Everything, Photonics 
+	  \item \small \textit{Cryptography} Information Security, Network Security, Security Algorithms, Quantum Information Theory, Quantum Key Distribution, Quantum Cryptography 
+	  \item \small \textit{Telecommunications} Modulation, Multiplexing, Codes, Telecommunication circuits, Photonics and optical fibers, IEEE 802.3 Protocols, Information Theory, Coding Theory, Computer Networks, etc 
+    \item \small \textit{Music and musicology} Classic, Rock, Metal, etc
+  \end{itemize}
 
 \end{document}

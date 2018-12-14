@@ -1,13 +1,17 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage{lipsum}
 \usepackage{fancyhdr}
-\usepackage[margin=1 in]{geometry}
+\usepackage[a4paper, left=1.5cm, top=3cm, right=1.5cm, bottom=0.5cm]{geometry}
 \usepackage{layout}
 \usepackage{sectsty}
 \usepackage{titlesec}
 
 \pagestyle{fancy}
-\lhead{\textbf{Kamran Amini} \\ +31 (0) 611060215 \\ Email: kam.cpp@gmail.com \\ Skype: kamcpp \\ Linkedin: \texttt{linkedin.com/in/kamcpp} \qquad \qquad \qquad \qquad \today}
+\lhead{\textbf{Kamran Amini} \\ 
+\texttt{+31 (0) 611060215} \\ 
+Email: \texttt{kam.cpp@gmail.com} \\ 
+Github: \texttt{github.com/kamcpp} \\
+Linkedin: \texttt{linkedin.com/in/kamcpp} \qquad \qquad \qquad \qquad \today}
 \rhead{Page \thepage }
 \cfoot{}
 \renewcommand{\headrulewidth}{1.0pt}
@@ -31,18 +35,29 @@
 As a highly motivated and senior software architect, while having spent more than 12 years in developing and architecting enterprise and distributed software for international companies, my skills cover a wide variety of development tools and platforms. The enterprise projects which I've been involved include a wide range of technologies, patterns, and concepts based on embedded C, C++, Java, Scala, Python, relational and NoSQL databases, etc. As a senior software engineer, I have strong hands on writing codes with various programming languages including C, C++, Java, Scala, Python, and bash scripting while having best practices and enterprise patterns in mind. As a distributed system engineer, I've always encountered with strict and tough functional and non-functional requirements in which security, performance, data consistency, distribution of resources, fault tolerance, high availability, authentication, and authorization have been among them. Recently, I've been working as an expert software engineer at TomTom as a part of Search team in order to make it better and give the customers a better search experience.
 
 \section{TECHNICAL SKILLS}
-\noindent \rule {3.5cm}{0.4pt}
+\noindent \rule {4.8cm}{0.4pt} \\
+\noindent
+\textbullet \hspace{0.1cm}\textbf{Programming Langs:} C++11- C11 - Java - Python - Scala \\
+\textbullet \hspace{0.1cm}\textbf{Paradigms:} Procedural - OOP - Functional - Multithreading - Multiprocessing - MQM - Event Driven Dev. (libuv, Java NIO) \\
+\textbullet \hspace{0.1cm}\textbf{Data Stores:} PostgreSQL - MySQL - MongoDB - Redis - Cassandra \\
+\textbullet \hspace{0.1cm}\textbf{Computer Science:} Balanced Trees - Graphs - Index Trees \\
+\textbullet \hspace{0.1cm}\textbf{Distributed Systems:} DFS - Dist. Processing - Dist. Caching - Dist. Key-Value Stores - FT and HA strategies - DMQ (Kafka) \\
+\textbullet \hspace{0.1cm}\textbf{Serialization \& RPC:} protobuf - gRPC - Thrift - Json over REST - Java RMI - XMLRPC \\
+\textbullet \hspace{0.1cm}\textbf{Cryptography:} OpenSSL - Symmetric Algs (DES, 3DES, AES) - Asymmetric Algs (RSA, DH) - SSL - PKI (CA, Digital Signature, PKCS certs, HSMs and Tokens) - Hash Algs - MACs - Error Detection \& Correction Algs \\ 
+\textbullet \hspace{0.1cm}\textbf{Kernel Dev.:} Linux Modules - Linux SysCalls - FreeBSD Modules \\
+\textbullet \hspace{0.1cm}\textbf{Machine Learning:} CUDA - Tensorflow - DSP - OpenCV - Supervised \& unsupervised learning - Reinforced Learning - Deep Learning \\
+\textbullet \hspace{0.1cm}\textbf{Computer Networks:} L3 protocols (ICMP, IP) - L4 protocols (UDP, TCP) - Socket Programming - L3 programming - Wireshark analysis \\
+\textbullet \hspace{0.1cm}\textbf{SCMs:} Git - Perforce - Mercurial - Subversion \\
+\textbullet \hspace{0.1cm}\textbf{Build Systems:} CMake - Ninja - Gradle - Maven - sbt \\
+\textbullet \hspace{0.1cm}\textbf{IDEs:} Vim as IDE - IntelliJ IDEA \\
+\textbullet \hspace{0.1cm}\textbf{DevOps Related:} Bash Scripting - Perl - KVM - Docker - Jenkins - Zabbix \\
+\textbullet \hspace{0.1cm}\textbf{Operating Systems:} Linux (Ubuntu, Red Hat) - UNIX like OSs (Mac OS, FreeBSD, QNX) - Windows \\
+\textbullet \hspace{0.1cm}\textbf{CI:} Jenkins - QuickBuild \\
+\textbullet \hspace{0.1cm}\textbf{Scrum:} Jira - Fisheye - Confluence - Bitbucket - Stash
 
-Programming Languages: C++, C, Java, Python, Scala \\
-Operating Systems: Linux (Ubuntu, Red Hat), UNIX like OSs (Mac OS, FreeBSD), Windows \\
-Scrum: Jira, Fisheye, Confluence, Bitbucket, Stash \\
-Build Systems: CMake, Ninja, Gradle, Maven, SBT \\
-CI: Jenkins, QuickBuild
-
-\section{LATEST EMPLOYMENTS}
-\noindent \rule {3.7cm}{0.4pt}
-
-\subsubsection{{ \textbullet \large TomTom} \\
+\section{RECENT CAREER}
+\noindent \rule {4.3cm}{0.4pt}
+\subsubsection{{ \textbullet \hspace{0.1cm} \large TomTom} \\
 \textnormal{Netherlands, Amsterdam} \\
 \textnormal{September 2017 - December 2018 (1 year, 4 months)} \\
 {Expert Software Engineer}}
@@ -51,40 +66,37 @@ CI: Jenkins, QuickBuild
   \begin{itemize}
     \setlength{\rightskip}{1cm}
     \setlength\itemsep{0em}
-    \item \textit {As an Expert Software Engineer}: I was part of the Search team inside the Navigation PU. We were working on different search engines utilizing different kinds of maps, exposing search and POI information services as some RESTful endpoints (NavKit Worker) hosted on AWS/Azure cloud platforms, and as an embedded native engine (NavKit) for QNX, Andorid and iOS devices.
-    \item \textit {Development Environment}: Ubuntu, Mac OS, and QNX as operating systems - Perforce and git as SMC - Test development using JUnit and Google Test mixed with bash scripts to run tests- Jira, Fisheye, Confluence, Bitbucket, and Stash as scrum tools - C++ 11, Java, Scala, and Python as programming languages - AWS and Azure as clouding platforms - Spring Web and Security for cloud based NavKit Worker - Jenkins and QuickBuild as CI machinery
+    \item I was part of the Search team inside the Navigation PU. We were working on different search engines utilizing different kinds of maps, exposing search and POI information services as some RESTful endpoints (NavKit Worker) hosted on AWS/Azure cloud platforms, and as an embedded native engine (NavKit) for QNX, Andorid and iOS devices.
   \end{itemize}
   \setlength{\leftskip}{0pt}
   \setlength{\rightskip}{0cm}
-\vspace{0.3cm}
-
-\subsubsection{{\large Jeppesen Systems (Boeing)} \\
+\vspace{0.05cm}
+\subsubsection{{ \textbullet \hspace{0.1cm} \large Jeppesen Systems (Boeing)} \\
 \textnormal{Sweden, Gothenburg} \\
-\textnormal{February 2017 - August 2017} \\
-{Expert Software Engineer}}
-\vspace{0.3cm}
+\textnormal{February 2017 - August 2017 (6 months)} \\
+{Expert Software Engineer}} \hfill
 
-\subsubsection{{\large Sahab Pardaz Co.} \\
+\subsubsection{{ \textbullet \hspace{0.1cm} \large Sahab Pardaz Co.} \\
 \textnormal{Iran, Tehran} \\
-\textnormal{July 2016 - February 2017} \\
+\textnormal{July 2016 - February 2017 (8 months)} \\
 {Deep Learning Research Developer, Enterprise Software Architect, Project Manager}}
 \vspace{0.3cm}
 
-\subsubsection{{\large Adro Co.} \\
+\subsubsection{{ \textbullet \hspace{0.1cm} \large Adro Co.} \\
 \textnormal{Iran, Tehran} \\
-\textnormal{June 2016 - February 2017} \\
+\textnormal{June 2016 - February 2017 (9 months)} \\
 {Senior Software Architect, Senior C++ Engineer}}
 \vspace{0.3cm}
 
-\subsubsection{{\large Noavaran Tejarat Gostar Naeem Co.} \\
+\subsubsection{{ \textbullet \hspace{0.1cm} \large Noavaran Tejarat Gostar Naeem Co.} \\
 \textnormal{Iran, Tehran} \\
-\textnormal{April 2015 - October 2016} \\
+\textnormal{April 2015 - October 2016 (1 year, 6 months)} \\
 {Chief Technical Officer, Senior Software Architect, Senior C/C++ Developer}}
 \vspace{0.3cm}
 
-\subsubsection{{\large Sahab Pardaz Co.} \\
+\subsubsection{{ \textbullet \hspace{0.1cm} \large Sahab Pardaz Co.} \\
 \textnormal{Iran, Tehran} \\
-\textnormal{February 2015 - June 2015} \\
+\textnormal{February 2015 - June 2015 (4 months)} \\
 {Distributed Systems Architect, Senior Java SE/EE Engineer, C++ Engineer}}
 \hfill
 

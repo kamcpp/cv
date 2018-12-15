@@ -1,108 +1,87 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage{lipsum}
-\usepackage{fancyhdr}
-\usepackage[a4paper, left=1.5cm, top=3cm, right=1.5cm, bottom=1.0cm]{geometry}
+\usepackage[a4paper, left=1.5cm, top=1cm, right=1.5cm, bottom=1.0cm]{geometry}
 \usepackage{layout}
 \usepackage{sectsty}
 \usepackage{titlesec}
+\usepackage{MnSymbol,wasysym}
+\usepackage{graphicx,txfonts}
 
-\pagestyle{fancy}
-\lhead{\textbf{Kamran Amini} \\ 
-\texttt{+31 (0) 611060215} \\ 
-Email: \texttt{kam.cpp@gmail.com} \\ 
-Github: \texttt{github.com/kamcpp} \\
-Linkedin: \texttt{linkedin.com/in/kamcpp} \qquad \qquad \qquad \qquad \today}
-\rhead{Page \thepage }
-\cfoot{}
-\renewcommand{\headrulewidth}{1.2pt}
-\renewcommand{\footrulewidth}{0.0pt}
+\newcommand{\heart}{\ensuremath\varheartsuit}
 
 \setcounter{secnumdepth}{0}
 
-\sectionfont{\fontsize{12}{15}\selectfont}
+\sectionfont{\fontsize{11}{12}\selectfont}
 
-\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\section{0pt}{10pt plus 1pt minus 1pt}{0pt plus 1pt minus 1pt}
 
 \begin{document}
+\noindent \textbf{Kamran Amini} \\
+\noindent \small \textbf{Expert Software Engineer at TomTom} \\ \\
+Parnassusweg 999, Amsterdam 1082LZ \\
+\texttt{+31 (0) 611060215} \\
+Email: \texttt{kam.cpp@gmail.com} \\
+Github: \texttt{github.com/kamcpp} \\
+Linkedin: \texttt{linkedin.com/in/kamcpp} 
 
-\thispagestyle{fancy}
-
-\hfill \break
-\section{IN SUMMARY}
+\section{SUMMARY}
 \noindent \rule {18.0cm}{0.2pt} \\
-As a highly motivated and senior software architect, while having spent more than 10 years in developing and architecting enterprise and distributed software for international companies, my skills cover a wide variety of development tools and platforms. The enterprise projects which I've been involved include a wide range of technologies, patterns, and concepts based on embedded C, C++, Java, Scala, Python, relational and NoSQL databases, etc. As a senior software engineer, I have strong hands on writing codes with various programming languages including C, C++, Java, Scala, Python, and bash scripting while having best practices and enterprise patterns in mind. As a distributed system engineer, I've always encountered with strict and tough functional and non-functional requirements in which security, performance, data consistency, distribution of resources, fault tolerance, high availability, authentication, and authorization have been among them. Recently, I've been working as an expert software engineer at TomTom as a part of Search team in order to make it better and give the customers a better search experience.
+As a highly energetic and motivated expert software engineer with more than 10 years of technical experience in developing and architecting enterprise and distributed software for international companies, my skills cover a wide variety of development tools and platforms. The enterprise projects that I've been part of include a wide range of technologies, patterns, and concepts based on embedded C, C++, Java, Scala, and Python. As a senior software engineer, I have strong hands on writing codes with various programming languages including C, C++, Java, Scala, and Python as well as Bash scripting while having the best design practices in mind. As a distributed system engineer, I've always encountered strict and tough functional and non-functional requirements like security, performance, data consistency, fault tolerance, and high availability which made me thrive and become more experienced.
 
 \section{TECHNICAL SKILLS}
 \noindent \rule {18.0cm}{0.2pt} \\
 \noindent
-\textbullet \hspace{0.1cm}\textbf{Programming Langs:} C++11- C11 - Java - Python - Scala \\
-\textbullet \hspace{0.1cm}\textbf{Paradigms:} Procedural - OOP - Functional - Multithreading - Multiprocessing - Event Driven Dev. (libuv, Java NIO), Actor Model (akka) \\
+\textbullet \hspace{0.1cm}\textbf{Programming Langs:} C++11 (\texttt{g++}, \texttt{clang++}) - C11 (\texttt{gcc}, \texttt{clang}) - Java - Python - Scala - x86-64 Assembly \\
+\textbullet \hspace{0.1cm}\textbf{Debugging:} \texttt{gdb} - Valgrind (Memcheck, Massif, callgrind) - Clang ASAN \& TSAN - JConsole - PDB \\
+\textbullet \hspace{0.1cm}\textbf{Paradigms:} Procedural - OOP - Functional - Aspect Oriented\\
+\textbullet \hspace{0.1cm}\textbf{Concurrency:} Multithreading - Multiprocessing - Event Driven Dev. (libuv, Java NIO) - Actor Model (akka) - Process and thread synchronization (mutexes, semaphores, condition variables) - shared memory - pipes \\
 \textbullet \hspace{0.1cm}\textbf{Data Stores:} PostgreSQL - MySQL - MongoDB - Redis - Cassandra \\
-\textbullet \hspace{0.1cm}\textbf{Computer Science:} Balanced Trees - Graphs - Index Trees - Sort \& Search Algs - Compression Algs - Bit Matching Algs  \\
-\textbullet \hspace{0.1cm}\textbf{Enterprise Systems:} MQM - Microservices - Event Sourcing \\
-\textbullet \hspace{0.1cm}\textbf{Distributed Systems:} DFS - Dist. Processing - Dist. Caching - Dist. Key-Value Stores - FT and HA strategies - DMQ (Kafka) \\
-\textbullet \hspace{0.1cm}\textbf{Serialization \& RPC:} protobuf - gRPC - ZeroMQ - Thrift - Json over REST - Java RMI - XMLRPC \\
+\textbullet \hspace{0.1cm}\textbf{Computer Science:} Balanced Trees (AVl, B-Tree, RB) - Graphs - Index Trees - Tries - Sort \& Search Algs - Compression Algs - Bit Matching Algs  \\
+\textbullet \hspace{0.1cm}\textbf{Distributed and Enterprise Systems:} MQM - Microservices - DFS (Hadoop, Gluster) - Dist. Processing (Ignite, MapReduce, akka) - Dist. Caching - Dist. Key-Value Stores - Streaming - Microbatching - Event Sourcing - FT and HA strategies - DMQ (Kafka)  \\
+\textbullet \hspace{0.1cm}\textbf{Serialization \& RPC:} protobuf - gRPC - ZeroMQ - Thrift - JSON over REST - Java RMI - XMLRPC \\
 \textbullet \hspace{0.1cm}\textbf{Specifications:} SUS - POSIX - PKCS standards - JavaEE(JPA, JSM, EJB, JavaServlets, JAX-WS, JAX-RS, etc) - Some RFCs (ASN.1, IP, TCP, UDP, DNS, HTTP, etc) \\
-\textbullet \hspace{0.1cm}\textbf{Cryptography:} OpenSSL - Symmetric Algs (DES, 3DES, AES) - Asymmetric Algs (RSA, DH) - SSL - PKI (CA, Digital Signature, PKCS certs, HSMs and Tokens) - Hash Algs - MACs - Error Detection \& Correction Algs \\ 
+\textbullet \hspace{0.1cm}\textbf{Cryptography:} OpenSSL - Symmetric Algs (DES, 3DES, AES) - Asymmetric Algs (RSA, DH) - SSL - PKI (CA, Digital Signature, PKCS certs, HSMs and Tokens) - Hash Algs - MAC Algs - Error Detection \& Correction Algs \\ 
 \textbullet \hspace{0.1cm}\textbf{Kernel Dev.:} Linux Modules - Linux SysCalls - FreeBSD Modules \\
-\textbullet \hspace{0.1cm}\textbf{Machine Learning:} CUDA - Tensorflow - DSP - OpenCV - Supervised \& unsupervised learning - Reinforced Learning - Deep Learning \\
+\textbullet \hspace{0.1cm}\textbf{Machine Learning:} CUDA Dev. - Tensorflow (C++ \& Python) - DSP - OpenCV - Supervised \& unsupervised learning - Reinforced Learning - Deep Learning \\
 \textbullet \hspace{0.1cm}\textbf{Computer Networks:} L3 protocols (ICMP, IP) - L4 protocols (UDP, TCP) - Socket Programming - L3 programming - Wireshark analysis \\
-\textbullet \hspace{0.1cm}\textbf{SCMs:} Git - Perforce - Mercurial - Subversion \\
+\textbullet \hspace{0.1cm}\textbf{SCMs:} Git - Perforce - Mercurial - Subversion - TFS \\
 \textbullet \hspace{0.1cm}\textbf{Build Systems:} CMake - Ninja - Gradle - Maven - sbt \\
-\textbullet \hspace{0.1cm}\textbf{IDEs:} Vim as IDE - IntelliJ IDEA \\
-\textbullet \hspace{0.1cm}\textbf{DevOps Related:} Bash Scripting - Perl - KVM - Docker - Jenkins - Zabbix \\
+\textbullet \hspace{0.1cm}\textbf{IDEs:} Vim as IDE (\heart \hspace{0.01cm} \smiley) - IntelliJ IDEA - Visual Studio \\
+\textbullet \hspace{0.1cm}\textbf{DevOps Related:} Bash Scripting - Perl - Python - KVM - Docker - Jenkins - Zabbix \\
 \textbullet \hspace{0.1cm}\textbf{Operating Systems:} Linux (Ubuntu, Red Hat) - UNIX like OSs (Mac OS, FreeBSD, QNX) - Windows \\
-\textbullet \hspace{0.1cm}\textbf{CI:} Jenkins - QuickBuild \\
+\textbullet \hspace{0.1cm}\textbf{CI:} Jenkins - QuickBuild - Travis CI \\
+\textbullet \hspace{0.1cm}\textbf{Documentation:} MarkDown - \LaTeX -Ascii Doc - Doxygen \\
 \textbullet \hspace{0.1cm}\textbf{Scrum:} Jira - Fisheye - Confluence - Bitbucket - Stash - Code Reviews - Pull Requests - Release Chain
 
 \section{CAREER}
-\noindent \rule {18.0cm}{0.2pt}
-\subsubsection{{ \textbullet \hspace{0.1cm} \large TomTom} \\
-\textnormal{Netherlands, Amsterdam} \\
-\textnormal{September 2017 - December 2018 (1 year, 4 months)} \\
-{Expert Software Engineer}}
-  \setlength{\leftskip}{0.5cm}
-  \setlength{\rightskip}{1cm}
-  \begin{itemize}
-    \setlength{\rightskip}{1cm}
-    \setlength\itemsep{0em}
-    \item I was part of the Search team inside the Navigation PU. We were working on different search engines utilizing different kinds of maps, exposing search and POI information services as some RESTful endpoints (NavKit Worker) hosted on AWS/Azure cloud platforms, and as an embedded native engine (NavKit) for QNX, Andorid and iOS devices.
-  \end{itemize}
-  \setlength{\leftskip}{0pt}
-  \setlength{\rightskip}{0cm}
+\noindent\rule {18.0cm}{0.2pt} \\ \\
+\textbullet \hspace{0.1cm} \large \textbf{TomTom} \\
+\indent \small \textbf{Expert Software Engineer} \textsl{(Sept. 2017 - Dec. 2018)} \\
+\indent \textnormal{Netherlands, Amsterdam} \\
+C++11 (\texttt{g++}, \texttt{clang}) - \texttt{gdb} - Valgrind - Clang ASAN \& TSAN - STL \& Boost - Google Test - Protobuf - Java SE - JUnit - Spring Web - JAXB - JSON over RESTful API - Thrift - Python - Jenkins - JIRA - Fisheye - Confluence - Bitbucket Stash - AWS/Azure based cloud \\
 
-\subsubsection{{ \textbullet \hspace{0.1cm} \large Jeppesen Systems (Boeing)} \\
-\textnormal{Sweden, Gothenburg} \\
-\textnormal{February 2017 - August 2017 (6 months)} \\
-{Expert Software Engineer}} \hfill
+\noindent \textbullet \hspace{0.1cm} \large \textbf{Jeppesen Systems (Boeing)} \\
+\indent \small \textbf{Expert Software Engineer} \textsl{(Feb. 2017 - Aug. 2017)} \\
+\indent \textnormal{Sweden, Gothenburg} \\
+C++ (\texttt{g++}) - Python - C\#.NET - \texttt{gdb} - Valgrind (callgrind, massif) - PDB - STL \& Boost - Google Test - XMLRPC - Jenkins - JIRA - Fisheye - Confluence \\
 
-\subsubsection{{ \textbullet \hspace{0.1cm} \large Sahab Pardaz Co.} \\
-\textnormal{Iran, Tehran} \\
-\textnormal{July 2016 - February 2017 (8 months)} \\
-{Deep Learning Research Developer, Enterprise Software Architect, Project Manager}
-\textnormal{February 2015 - June 2015 (4 months)} \\
-{Distributed Systems Architect, Senior Java SE/EE Engineer, C++ Engineer}}
-\vspace{0.3cm}
+\noindent \textbullet \hspace{0.1cm} \large \textbf{Sahab Pardaz Co.} \\
+\indent \small \textbf{Deep Learning Research Developer, Enterprise Software Architect} \textsl{(Jul. 2016 - Feb. 2017)} \\
+\indent \small \textbf{Distributed Systems Architect, Senior Software Engineer} \textsl{(Feb. 2015 - Jun. 2015)} \\
+\indent \textnormal{Iran, Tehran} \\
+C++ (\texttt{g++}) - C (CUDA) - Java SE - Python - \texttt{gdb} - Valgrind (memcheck, callgrind, massif, helgrind) - STL \& Boost - Google Test - protobuf - gRPC - Tensorflow - Jenkins - JIRA - Fisheye - Github \\
 
-\subsubsection{{ \textbullet \hspace{0.1cm} \large Adro Co.} \\
-\textnormal{Iran, Tehran} \\
-\textnormal{June 2016 - February 2017 (9 months)} \\
-{Senior Software Architect, Senior C++ Engineer}}
-\vspace{0.3cm}
+\noindent \textbullet \hspace{0.1cm} \large \textbf{Adro Co.} \\
+\indent \small \textbf{Senior Software Architect, Principal C++ Engineer} textsl{(Jun. 2016 - Feb. 2017)} \\
+\indent \textnormal{Iran, Tehran} \\
 
-\subsubsection{{ \textbullet \hspace{0.1cm} \large Noavaran Tejarat Gostar Naeem Co.} \\
-\textnormal{Iran, Tehran} \\
-\textnormal{April 2015 - October 2016 (1 year, 6 months)} \\
-{Chief Technical Officer, Senior Software Architect, Senior C/C++ Developer}}
-\vspace{0.3cm}
+\noindent \textbullet \hspace{0.1cm} \large \textbf{Noavaran Tejarat Gostar Naeem Co.} \\
+\indent \small \textbf{Chief Technical Officer, Chief Software Architect} \textsl{(Apr. 2015 - Oct. 2016)} \\
+\indent \textnormal{Iran, Tehran} \\
 
-\subsubsection{{ \textbullet \hspace{0.1cm} \large Sharif CERT Center} \\ 
+
+\noindent \textbullet \hspace{0.1cm} \large \textbf{Sharif CERT Center} \\ 
+\indent \small \textbf{Java SE/EE Engineer, C/C++ Engineer} \textsl{(Dec. 2011 - Jun. 2013)} \\
 \textnormal{Iran, Tehran} \\ 
-\textnormal{December 2011 - June 2013 (1 years, 6 months)} \\ 
-{Java SE/EE Engineer, C/C++ Engineer}}
-\vspace{0.5cm}
 
 % \rule {14cm}{0.4pt}
 

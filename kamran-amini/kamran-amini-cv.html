@@ -6,7 +6,7 @@
 <style>
   @page {
     size: A4;
-    margin: 1cm 1.5cm 1.5cm 1.5cm;
+    margin: 2cm 0 1.5cm 0;
   }
 
   html, body {
@@ -31,6 +31,11 @@
     font-weight: bold;
     margin: 10pt 0 0 0;
     line-height: 1.2;
+  }
+
+  h2 {
+    break-after: avoid;
+    page-break-after: avoid;
   }
 
   hr {
@@ -113,6 +118,8 @@
 
   .job {
     margin-top: 10pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .job-company {
@@ -201,10 +208,11 @@
       <h1>Kamran Amini</h1>
       <div class="header-line small">Senior Systems &amp; Solutions Architect</div>
       <div class="header-line small">Independent Consultant</div>
-      <div class="header-line small header-indent">CTO Advisory</div>
-      <div class="header-line small header-indent">Systems &amp; Solutions Architecture</div>
-      <div class="header-line small header-indent">Blockchain &amp; AI Adoption</div>
-      <div class="header-line small">Author of Books &amp; Articles on Systems Programming &amp; Software Architecture</div>
+      <div class="header-line small header-indent">&#10003;&nbsp; CTO Advisory &amp; Strategic Decision Making</div>
+      <div class="header-line small header-indent">&#10003;&nbsp; Systems &amp; Solutions Architecture</div>
+      <div class="header-line small header-indent">&#10003;&nbsp; Blockchain &amp; AI Adoption</div>
+      <div class="header-line small header-indent">&#10003;&nbsp; Data &amp; Network Security</div>
+      <div class="header-line small">Author of Books &amp; Articles on Software Engineering</div>
     </div>
 
     <div class="contact-block small">

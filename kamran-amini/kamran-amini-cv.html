@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kamran Amini - CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 1cm 1.5cm 1.5cm 1.5cm;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Latin Modern Roman', 'CMU Serif', 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
+    font-size: 10pt;
+    line-height: 1.35;
+    color: #000;
+    max-width: 21cm;
+    margin: 1cm auto 1.5cm auto;
+    padding: 0 1.5cm;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  h1 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 10pt 0 0 0;
+    line-height: 1.2;
+  }
+
+  hr {
+    border: none;
+    border-top: 0.2pt solid #000;
+    margin: 2pt 0 6pt 0;
+  }
+
+  .small {
+    font-size: 9pt;
+  }
+
+  .header-line {
+    margin: 1pt 0;
+  }
+
+  .contact-block {
+    margin: 10pt 0;
+  }
+
+  .contact-block div {
+    margin: 1pt 0;
+  }
+
+  p.summary {
+    font-size: 9pt;
+    text-align: justify;
+    margin: 4pt 0 0 0;
+  }
+
+  ul.skills {
+    list-style: none;
+    padding: 0;
+    margin: 4pt 0 0 0;
+    font-size: 9pt;
+  }
+
+  ul.skills li {
+    margin: 2pt 0;
+    text-align: justify;
+  }
+
+  ul.skills li::before {
+    content: "\2022  ";
+  }
+
+  .job {
+    margin-top: 10pt;
+  }
+
+  .job-company {
+    font-size: 13pt;
+    font-weight: bold;
+  }
+
+  .job-company::before {
+    content: "\2605  ";
+  }
+
+  .job-title {
+    font-size: 10pt;
+    margin: 2pt 0 0 1.2em;
+  }
+
+  .job-title .role {
+    font-weight: bold;
+  }
+
+  .job-title .dates {
+    font-style: italic;
+  }
+
+  .job-location {
+    margin: 1pt 0 0 1.2em;
+  }
+
+  ul.job-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 3pt 0 0 1.2em;
+    font-size: 9.5pt;
+  }
+
+  ul.job-bullets li {
+    margin: 2pt 0;
+    text-align: justify;
+  }
+
+  ul.job-bullets li::before {
+    content: "\2022  ";
+  }
+
+  code {
+    font-family: 'Latin Modern Mono', 'CMU Typewriter Text', 'Courier New', monospace;
+    font-size: 0.95em;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  ul.plain {
+    list-style: none;
+    padding: 0;
+    margin: 4pt 0 0 0;
+    font-size: 9.5pt;
+  }
+
+  ul.plain li {
+    margin: 3pt 0;
+    text-align: justify;
+  }
+
+  ul.plain li::before {
+    content: "\2022  ";
+  }
+
+  @media print {
+    body {
+      margin: 0 auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <h1>Kamran Amini</h1>
+  <div class="header-line small"><strong>Senior Software Engineer</strong> at <strong>ActiveVideo BV</strong></div>
+  <div class="header-line small">High Skilled Migrant in Netherlands</div>
+  <div class="header-line small">Available for <strong>1st of March 2023</strong></div>
+
+  <div class="contact-block small">
+    <div>Parnassusweg 999, Amsterdam 1082LZ</div>
+    <div><code>+31 (0) 611060215</code></div>
+    <div>Email: <code>kam.cpp@gmail.com</code></div>
+    <div>Github: <code>github.com/kamcpp</code></div>
+    <div>Linkedin: <code>linkedin.com/in/kamcpp</code></div>
+  </div>
+
+  <h2 style="font-size:12pt; margin:10pt 0 0 0;">SUMMARY</h2>
+  <hr>
+  <p class="summary">With over 14 years of professional experience in various fields of software development, I've dedicated my past few years to creating cloud-based distributed systems. While always been a key contributor to the overall architecture/design and considering requirements like security, availability, robustness, fault tolerance, etc, I have always had a strong will to be part of the development team and code some of the critical key components. Hence, backed by my academic studies in computer science, I have had the pleasure of learning by coding and seeing serious corner cases and bugs in action. I have used many programming languages, but system languages like C, C++, Golang, and Rust have always been amongst the most loved ones. As part of my career, I have always tried to keep an eye on the DevOps side of things, therefore, I have gained invaluable experience in scripting and configuring Bash, Docker, Kubernetes, Helm, AWS resources, etc. I do love start-ups and the mindset around raising one, so Javascript and NodeJS technology is among the game-changers in that field and I've had the chance to use them extensively in different projects. Moreover, during the past few years, I have gathered a deep understanding of distributed ledgers and blockchains, so I have worked with various blockchain startups to develop their on-chain complex financial logic (smart contracts) using Solidity.</p>
+
+  <h2 style="font-size:12pt; margin:10pt 0 0 0;">TECHNICAL SKILLS</h2>
+  <hr>
+  <ul class="skills">
+    <li><strong>Programming Languages:</strong> C++ (14, 17, 20) - C - Golang - Rust - JS (ES5, ES6) - Java (11+) - Python (2, 3) - Perl</li>
+    <li><strong>Blockchain Development:</strong> Solidity (EVM chains) - Solana - web3 (ethers.js, web3.js) - Hardhat</li>
+    <li><strong>Architecture Concepts:</strong> ACID - CAP - In-memory and Dist. caches - Distributed key-value stores - Replication - Fault tolerance - Leader election - Dist. locks - Dist. file systems - Streaming - Micro-batching - CQRS - Event Sourcing - Message Queues - Green threads - Event loops and async programming - Load balancers</li>
+    <li><strong>Data Storage:</strong> PostgreSQL - MySQL - MongoDB - Redis - Dist. ledgers (blockchains)</li>
+    <li><strong>Kubernetes:</strong> <code>kubectl</code> - <code>k9s</code> - Helm - Kustomize - Configuring resources such as ingress, pod, deployment, replica set, secrets, pod security policies, pod security admission (PSA) as of 1.25 - Migration from earlier versions to 1.23 and 1.25</li>
+    <li><strong>Amazon AWS:</strong> <code>awscli</code> - <code>eksctl</code> - Configuring resources such as EC2 instances, EBS volumes, EFS, S3, ALBs, EKS, IAM, etc</li>
+    <li><strong>Serialization &amp; RPC:</strong> Protobuf - gRPC - ZeroMQ - Thrift - JSON over REST - SOAP - Java RMI - XMLRPC</li>
+    <li><strong>Standards:</strong> SUS and POSIX - PKCS standards - JavaEE (JPA, JSM, EJB, Java Servlets, JAX-WS, JAX-RS, etc) - RFCs (ASN.1, IP, TCP, UDP, DNS, HTTP, CMS, etc), ERCs (20, 721, 1155, 165, 2981, 2535, ...)</li>
+    <li><strong>Cryptography:</strong> OpenSSL - Symmetric algos (DES, 3DES, AES) - Asymmetric algos (RSA, ECC, DH) - SSL - PKI (CA, Digital Signature, PKCS certs, HSMs and Crypto. Tokens) - Wrap Keys - Key Derivation Algorithms - Hash algos - MAC algos - Error Detection (Crypto. Hashes), studying for CISSP certificate</li>
+    <li><strong>Computer Networks:</strong> OSI &amp; Internet Protocol Suite, Packet Switching, Error Detection &amp; Correction (Checksum, CRC, ARQ, FEC), L3 protocols (ICMP, IP) - L4 protocols (UDP, TCP) - Socket Programming - L3 programming (<code>libpcap</code>, JNetPcap) - Wireshark analysis - Penetration Testing - <code>tcpdump</code></li>
+    <li><strong>Kernel Development:</strong> Linux Modules - Linux System Calls</li>
+    <li><strong>Machine Learning:</strong> CUDA Dev. - Tensorflow (C++ &amp; Python) - OpenCV (C, C++, Python) - Supervised &amp; Unsupervised Learning - Reinforced Learning - Deep Learning - Locality Sensitive Hashes - Iris Code - Gabor filter - Feature Selection &amp; Extraction</li>
+  </ul>
+
+  <h2 style="font-size:12pt; margin:10pt 0 0 0;">CAREER</h2>
+  <hr>
+
+  <div class="job">
+    <div class="job-company">ActiveVideo BV</div>
+    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(April. 2019 - Feb. 2023)</span></div>
+    <div class="job-location">Netherlands, Hilversum</div>
+    <ul class="job-bullets">
+      <li>CloudTV: A cloud HTTP renderer and streamer that could be used to broadcast objects, menus, user interfaces, audio/video, etc to be served via set-top boxes and shown on TVs. It was built on top of Java, C++, WebKit engine, and Perl.</li>
+      <li>AppCloud: A platform to launch containerized Android on demand in order to render and stream Android apps and stream them to set-top boxes to be shown on TVs. The backend was deployed to a Kubernetes cluster using AWS EKS technology. Golang, C++, Python, and Java, were the programming languages used to develop many micro-services keeping AppCloud alive.</li>
+      <li>Member of Tech Council: We were discussing the tech debts and prioritizing them according to product objectives. It has its own backlog and Kanban flow.</li>
+      <li>Founding member of Security Guild: In this guild, we were devising security standards and implementing/enforcing them within teams as part of their planning and architecture. We were also involved in preparing the product for getting certified and monitoring the changes to remain compatible with the received certification.</li>
+      <li>C++17 (<code>g++</code>, <code>clang</code>) - Golang - Java, and Kotlin - Python - AWS - Kubernetes (EKS) - S3 - EFS - EBS - Ceph - Envoy</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">TomTom BV</div>
+    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(Sept. 2017 - March. 2019)</span></div>
+    <div class="job-location">Netherlands, Amsterdam</div>
+    <ul class="job-bullets">
+      <li>Expert Software Consultant from Modis B.V.</li>
+      <li>NavKit Free Text Search Engine, Navkit Worker REST Services, POI Info Services</li>
+      <li>C++11 (<code>g++</code>, <code>clang</code>) - Java SE - JUnit - Spring MVC - JAXB - Spring REST - <code>gdb</code> - Valgrind - Clang ASAN &amp; TSAN - STL &amp; Boost - Google Test - Protobuf - Thrift - Python - Jenkins - QuickBuild - Docker - JIRA - Fisheye - Confluence - Bitbucket Stash - AWS/Azure based cloud</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Jeppesen Systems (a Boeing subsidiary)</div>
+    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(Feb. 2017 - Aug. 2017)</span></div>
+    <div class="job-location">Sweden, Gothenburg</div>
+    <ul class="job-bullets">
+      <li>Manpower Application</li>
+      <li>C++11 (<code>g++</code>) - Python - C#.NET - <code>gdb</code> - Valgrind (callgrind, massif) - PDB - STL &amp; Boost - Google Test - XMLRPC - Jenkins - JIRA - Fisheye - Confluence</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Adro Co.</div>
+    <div class="job-title"><span class="role">Senior Software Architect, Principal C++ Engineer</span> <span class="dates">(Jun. 2016 - Jan. 2017)</span></div>
+    <div class="job-location">Iran, Tehran</div>
+    <ul class="job-bullets">
+      <li>Realtime Bidding (RTB) Engine</li>
+      <li>C++ (<code>g++</code>) - Python - <code>gdb</code> - Valgrind - STL &amp; Boost - libuv - Google Test - Protobuf - Jenkins - Travis CI - Docker - JIRA - Fisheye</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Naeem Co.</div>
+    <div class="job-title"><span class="role">Chief Technical Officer, Chief Software Architect</span> <span class="dates">(Apr. 2015 - Oct. 2016)</span></div>
+    <div class="job-location">Iran, Tehran</div>
+    <ul class="job-bullets">
+      <li><strong>Projects:</strong> ePassport Issuance System - Face Recognition System, Biometric Identification Sys.</li>
+      <li><strong>Crypto.:</strong> OpenSSL - PKCS (1, 7, 10, 11, 12) - ICAO MRTD standards - HSM - Key Mgmt. - PKCS11 Tokens</li>
+      <li><strong>Stack:</strong> C (<code>gcc</code>) - C++ (<code>g++</code>) - Java SE - Java EE - Spring MVC - Wildfly - Tomcat - Python - <code>gdb</code> - Valgrind - STL &amp; Boost - wxWidgets - Qt - Google Test - Jenkins - Docker - vSphere - Proxmox - Gluster - Cassandra - Redmine - GitLab</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Sharif CERT Center</div>
+    <div class="job-title"><span class="role">Software Engineer</span> <span class="dates">(Dec. 2011 - Jun. 2013)</span></div>
+    <div class="job-location">Iran, Tehran</div>
+    <ul class="job-bullets">
+      <li>Botnet Detection System - Sinkhole - DDNS as a FreeBSD module</li>
+      <li>C++ (<code>g++</code>) - Java SE - Perl - <code>gdb</code> - JConsole - Valgrind - STL &amp; Boost - Swing - Redmine</li>
+    </ul>
+  </div>
+
+  <h2 style="font-size:12pt; margin:10pt 0 0 0;">Technical authorship &amp; open source projects</h2>
+  <hr>
+  <ul class="plain">
+    <li><a href="https://www.amazon.com/Extreme-Taking-Concurrency-advanced-capabilities/dp/1789343623"><strong>Extreme C:</strong></a> My first book was published in October 2019 by Packt Publication.</li>
+    <li><a href="https://www.manning.com/liveproject/linux-two-step-authentication-with-rust"><strong>Linux Two-Step Authentication with Rust:</strong></a> A liveProject published by Manning Publications that walks through the students and makes them able to use Rust to develop a two-step verification system for authentication services.</li>
+    <li><a href="https://github.com/kamcpp/ess_backend"><strong>Encryptizer Simurgh Software (ESS) Backend Project</strong></a>: Rust RESTful backend written for the Manning liveProject</li>
+    <li><a href="https://github.com/kamcpp/ess_clients"><strong>Encryptizer Simurgh Software (ESS) Clients Project</strong></a>: Rust REST client written for the Manning liveProject</li>
+    <li><a href="https://bitbucket.org/kamcpp/dcs_engine/src/master/"><strong>Domain Catcher Engine</strong></a>: Written in Rust meant to send EPP request to catch the dropped domains</li>
+    <li><a href="https://github.com/marirs/msg-parser-rs"><strong>Outlook Email Message (.msg) parser</strong></a>: Written in Rust</li>
+  </ul>
+
+  <h2 style="font-size:12pt; margin:10pt 0 0 0;">FOREIGN LANGUAGES</h2>
+  <hr>
+  <p style="font-size:9.5pt; margin:4pt 0 0 0;">Persian (<strong>Native</strong>), English (<strong>Fluent</strong>), French (<strong>A1</strong>), Dutch (<strong>A2</strong>)</p>
+
+  <h2 style="font-size:12pt; margin:10pt 0 0 0;">EDUCATION</h2>
+  <hr>
+  <ul class="plain">
+    <li>(2017 - Present) <strong>Bachelor of Science in Physics (Astronomy and Planetary Science)</strong> at The Open University</li>
+    <li>(2004 - 2008) <strong>Bachelor of Software Engineering</strong> at University of Isfahan (Isfahan, Iran)</li>
+  </ul>
+
+  <h2 style="font-size:12pt; margin:10pt 0 0 0;">PERSONAL INTERESTS</h2>
+  <hr>
+  <ul class="plain">
+    <li><strong>Physics and Astronomy</strong>: Cosmology, Astronomy, Quantum Physics, Quantum Mechanics, Particle Physics, Special and General Relativity, Theory of Everything, Photonics.</li>
+    <li><strong>Mathematics</strong>: Linear and Abstract Algebra, Probability Theory, Information Theory</li>
+    <li><strong>Cryptography</strong>: Information Security, Network Security, Security Algorithms, Quantum Information Theory, Quantum Key Distribution, Quantum Cryptography</li>
+    <li><strong>Philosophy</strong>: Western Philosophy, Sociology, Economics, Politics and Humanities</li>
+    <li><strong>Telecommunications</strong>: Modulation, Multiplexing, Codes, Telecommunication circuits, Photonics and optical fibers, IEEE 802.3 Protocols, Information Theory, Coding Theory, Computer Networks, etc</li>
+  </ul>
+
+</body>
+</html>

@@ -47,12 +47,42 @@
     margin: 1pt 0;
   }
 
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5cm;
+    margin: 0 0 6pt 0;
+  }
+
+  .top-section .name-block {
+    flex: 1 1 auto;
+  }
+
   .contact-block {
-    margin: 10pt 0;
+    flex: 0 0 auto;
+    margin: 10pt 0 0 0;
+    text-align: right;
   }
 
   .contact-block div {
     margin: 1pt 0;
+  }
+
+  .email-grid {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 0.3em;
+    justify-content: end;
+    margin: 1pt 0;
+  }
+
+  .email-label {
+    text-align: right;
+  }
+
+  .email-value {
+    text-align: left;
   }
 
   p.summary {
@@ -162,17 +192,25 @@
 </head>
 <body>
 
-  <h1>Kamran Amini</h1>
-  <div class="header-line small"><strong>Senior Software Engineer</strong> at <strong>ActiveVideo BV</strong></div>
-  <div class="header-line small">High Skilled Migrant in Netherlands</div>
-  <div class="header-line small">Available for <strong>1st of March 2023</strong></div>
+  <div class="top-section">
+    <div class="name-block">
+      <h1>Kamran Amini</h1>
+      <div class="header-line small">Senior Systems &amp; Solutions Architect</div>
+      <div class="header-line small">Independent Consultant &mdash; CTO Advisory, Systems &amp; Solutions Architecture</div>
+      <div class="header-line small">Author of Books &amp; Articles on Systems Programming &amp; Software Architecture</div>
+    </div>
 
-  <div class="contact-block small">
-    <div>Parnassusweg 999, Amsterdam 1082LZ</div>
-    <div><code>+31 (0) 611060215</code></div>
-    <div>Email: <code>kam.cpp@gmail.com</code></div>
-    <div>Github: <code>github.com/kamcpp</code></div>
-    <div>Linkedin: <code>linkedin.com/in/kamcpp</code></div>
+    <div class="contact-block small">
+      <div>Dr.-Adolf-Sch&auml;rf-Platz 5/6, 1022 Vienna, Austria</div>
+      <div>Parnassusweg 999, 1082LZ Amsterdam, The Netherlands</div>
+      <div><code>+31 (0) 611060215</code></div>
+      <div class="email-grid">
+        <span class="email-label">Email:</span><span class="email-value"><code>kam.cpp@gmail.com</code></span>
+        <span class="email-label"></span><span class="email-value"><code>kam@dekrypt.nl</code></span>
+      </div>
+      <div>Github: <code>github.com/kamcpp</code></div>
+      <div>Linkedin: <code>linkedin.com/in/kamcpp</code></div>
+    </div>
   </div>
 
   <h2 style="font-size:12pt; margin:10pt 0 0 0;">SUMMARY</h2>

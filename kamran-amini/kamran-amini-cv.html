@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="refresh" content="2">
 <title>Kamran Amini - CV</title>
 <style>
   @page {
@@ -123,7 +124,7 @@
   }
 
   .job-company {
-    font-size: 13pt;
+    font-size: 11pt;
     font-weight: bold;
   }
 
@@ -131,9 +132,37 @@
     content: "\2605  ";
   }
 
+  .job-company-renamed {
+    font-size: 10pt;
+    margin-left: 1.4em;
+  }
+
+  .job-company-renamed::before {
+    content: "\21B3  ";
+  }
+
+  .job-company-renamed-2 {
+    margin-left: 2.8em;
+  }
+
+  .job-company-renamed-3 {
+    margin-left: 4.2em;
+  }
+
+  .job-detail-grouped,
+  ul.job-bullets.job-detail-grouped {
+    margin-left: 2.9em;
+  }
+
+  .company-dates {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.85em;
+  }
+
   .job-title {
     font-size: 10pt;
-    margin: 2pt 0 0 1.2em;
+    margin: 2pt 0 0 2.2em;
   }
 
   .job-title .role {
@@ -145,14 +174,19 @@
   }
 
   .job-location {
-    margin: 1pt 0 0 1.2em;
+    margin: 1pt 0 0 2.2em;
   }
 
   ul.job-bullets {
     list-style: none;
     padding: 0;
-    margin: 3pt 0 0 1.2em;
-    font-size: 9.5pt;
+    margin: 3pt 0 0 2.9em;
+    font-size: 8.5pt;
+  }
+
+  ul.job-bullets li .item-title {
+    font-weight: normal;
+    text-decoration: underline;
   }
 
   ul.job-bullets li {
@@ -232,6 +266,78 @@
   <hr>
   <p class="summary">With over 20 years of professional experience across software development and systems architecture, I have built and led the design of cloud-based distributed systems that meet exacting requirements for security, availability, robustness, and fault tolerance. Grounded in a computer science background, I have combined hands-on engineering with architectural leadership, remaining directly involved in coding critical components to ensure my architectural decisions are informed by implementation reality. My core expertise lies in systems-level programming languages, including C, C++, Golang, and Rust, complemented by extensive DevOps experience spanning Bash, Docker, Kubernetes, Helm, and AWS/GCP infrastructure. I have also worked extensively in start-up environments, building and scaling backend services and APIs under fast-moving product timelines, and have advised blockchain start-ups on the design and implementation of complex on-chain financial logic using Solidity. Beyond hands-on delivery, I consult companies on systems and solutions architecture, CTO-level technology strategy, blockchain adoption, and the integration of AI into engineering and business processes.</p>
 
+  <h2 style="font-size:12pt; margin:10pt 0 0 0;">CAREER</h2>
+  <hr>
+
+  <div class="job">
+    <div class="job-company">ActiveVideo BV <span class="company-dates">(April 2019 - February 2023)</span></div>
+    <div class="job-company job-company-renamed">Commscope Inc. <span class="company-dates">(March 2023 - March 2025)</span></div>
+    <div class="job-company job-company-renamed job-company-renamed-2">ARRIS BV <span class="company-dates">(April 2025 - December 2025)</span></div>
+    <div class="job-company job-company-renamed job-company-renamed-3">Vistance Networks BV <span class="company-dates">(January 2026 - Present)</span></div>
+    <div class="job-title"><span class="role">Senior Software Engineer</span></div>
+    <div class="job-location">The Netherlands, Hilversum</div>
+    <ul class="job-bullets job-detail-grouped">
+      <li><span class="item-title">CloudTV (Video Stitching Engine):</span> Cloud HTTP renderer/streamer broadcasting menus, UI, and audio/video to set-top boxes, built on Java, C++, WebKit, and Perl.</li>
+      <li><span class="item-title">AppCloud:</span> On-demand containerized Android streaming platform, with its microservices backend deployed on Kubernetes (AWS EKS).</li>
+      <li><span class="item-title">Multiview Engine:</span> Cloud HTTP renderer/streamer broadcasting multiple channels simultaneously to set-top boxes and TVs.</li>
+      <li><span class="item-title">Member of Tech Council:</span> Prioritized tech debt against product objectives via a dedicated backlog and Kanban flow.</li>
+      <li><span class="item-title">Founding member of Security Guild:</span> Devised and enforced security standards across teams, and supported product certification.</li>
+      <li>C++17 (<code>g++</code>, <code>clang</code>) - Golang - Java, and Kotlin - Python - AWS - Kubernetes (EKS) - S3 - EFS - EBS - Ceph - Envoy</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">TomTom BV</div>
+    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(Sept. 2017 - March. 2019)</span></div>
+    <div class="job-location">Netherlands, Amsterdam</div>
+    <ul class="job-bullets">
+      <li><span class="item-title">Expert Software Consultant from Modis B.V.</span></li>
+      <li><span class="item-title">NavKit Free Text Search Engine, Navkit Worker REST Services, POI Info Services</span></li>
+      <li>C++11 (<code>g++</code>, <code>clang</code>) - Java SE - JUnit - Spring MVC - JAXB - Spring REST - <code>gdb</code> - Valgrind - Clang ASAN &amp; TSAN - STL &amp; Boost - Google Test - Protobuf - Thrift - Python - Jenkins - QuickBuild - Docker - JIRA - Fisheye - Confluence - Bitbucket Stash - AWS/Azure based cloud</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Jeppesen Systems (a Boeing subsidiary)</div>
+    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(Feb. 2017 - Aug. 2017)</span></div>
+    <div class="job-location">Sweden, Gothenburg</div>
+    <ul class="job-bullets">
+      <li><span class="item-title">Manpower Application</span></li>
+      <li>C++11 (<code>g++</code>) - Python - C#.NET - <code>gdb</code> - Valgrind (callgrind, massif) - PDB - STL &amp; Boost - Google Test - XMLRPC - Jenkins - JIRA - Fisheye - Confluence</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Adro Co.</div>
+    <div class="job-title"><span class="role">Senior Software Architect, Principal C++ Engineer</span> <span class="dates">(Jun. 2016 - Jan. 2017)</span></div>
+    <div class="job-location">Iran, Tehran</div>
+    <ul class="job-bullets">
+      <li><span class="item-title">Realtime Bidding (RTB) Engine</span></li>
+      <li>C++ (<code>g++</code>) - Python - <code>gdb</code> - Valgrind - STL &amp; Boost - libuv - Google Test - Protobuf - Jenkins - Travis CI - Docker - JIRA - Fisheye</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Naeem Co.</div>
+    <div class="job-title"><span class="role">Chief Technical Officer, Chief Software Architect</span> <span class="dates">(Apr. 2015 - Oct. 2016)</span></div>
+    <div class="job-location">Iran, Tehran</div>
+    <ul class="job-bullets">
+      <li><span class="item-title">Projects:</span> ePassport Issuance System - Face Recognition System, Biometric Identification Sys.</li>
+      <li><span class="item-title">Crypto.:</span> OpenSSL - PKCS (1, 7, 10, 11, 12) - ICAO MRTD standards - HSM - Key Mgmt. - PKCS11 Tokens</li>
+      <li><span class="item-title">Stack:</span> C (<code>gcc</code>) - C++ (<code>g++</code>) - Java SE - Java EE - Spring MVC - Wildfly - Tomcat - Python - <code>gdb</code> - Valgrind - STL &amp; Boost - wxWidgets - Qt - Google Test - Jenkins - Docker - vSphere - Proxmox - Gluster - Cassandra - Redmine - GitLab</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Sharif CERT Center</div>
+    <div class="job-title"><span class="role">Software Engineer</span> <span class="dates">(Dec. 2011 - Jun. 2013)</span></div>
+    <div class="job-location">Iran, Tehran</div>
+    <ul class="job-bullets">
+      <li><span class="item-title">Botnet Detection System - Sinkhole - DDNS as a FreeBSD module</span></li>
+      <li>C++ (<code>g++</code>) - Java SE - Perl - <code>gdb</code> - JConsole - Valgrind - STL &amp; Boost - Swing - Redmine</li>
+    </ul>
+  </div>
+
   <h2 style="font-size:12pt; margin:10pt 0 0 0;">TECHNICAL SKILLS</h2>
   <hr>
   <ul class="skills">
@@ -248,74 +354,6 @@
     <li><strong>Kernel Development:</strong> Linux Modules - Linux System Calls</li>
     <li><strong>Machine Learning:</strong> CUDA Dev. - Tensorflow (C++ &amp; Python) - OpenCV (C, C++, Python) - Supervised &amp; Unsupervised Learning - Reinforced Learning - Deep Learning - Locality Sensitive Hashes - Iris Code - Gabor filter - Feature Selection &amp; Extraction</li>
   </ul>
-
-  <h2 style="font-size:12pt; margin:10pt 0 0 0;">CAREER</h2>
-  <hr>
-
-  <div class="job">
-    <div class="job-company">ActiveVideo BV</div>
-    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(April. 2019 - Feb. 2023)</span></div>
-    <div class="job-location">Netherlands, Hilversum</div>
-    <ul class="job-bullets">
-      <li>CloudTV: A cloud HTTP renderer and streamer that could be used to broadcast objects, menus, user interfaces, audio/video, etc to be served via set-top boxes and shown on TVs. It was built on top of Java, C++, WebKit engine, and Perl.</li>
-      <li>AppCloud: A platform to launch containerized Android on demand in order to render and stream Android apps and stream them to set-top boxes to be shown on TVs. The backend was deployed to a Kubernetes cluster using AWS EKS technology. Golang, C++, Python, and Java, were the programming languages used to develop many micro-services keeping AppCloud alive.</li>
-      <li>Member of Tech Council: We were discussing the tech debts and prioritizing them according to product objectives. It has its own backlog and Kanban flow.</li>
-      <li>Founding member of Security Guild: In this guild, we were devising security standards and implementing/enforcing them within teams as part of their planning and architecture. We were also involved in preparing the product for getting certified and monitoring the changes to remain compatible with the received certification.</li>
-      <li>C++17 (<code>g++</code>, <code>clang</code>) - Golang - Java, and Kotlin - Python - AWS - Kubernetes (EKS) - S3 - EFS - EBS - Ceph - Envoy</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-company">TomTom BV</div>
-    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(Sept. 2017 - March. 2019)</span></div>
-    <div class="job-location">Netherlands, Amsterdam</div>
-    <ul class="job-bullets">
-      <li>Expert Software Consultant from Modis B.V.</li>
-      <li>NavKit Free Text Search Engine, Navkit Worker REST Services, POI Info Services</li>
-      <li>C++11 (<code>g++</code>, <code>clang</code>) - Java SE - JUnit - Spring MVC - JAXB - Spring REST - <code>gdb</code> - Valgrind - Clang ASAN &amp; TSAN - STL &amp; Boost - Google Test - Protobuf - Thrift - Python - Jenkins - QuickBuild - Docker - JIRA - Fisheye - Confluence - Bitbucket Stash - AWS/Azure based cloud</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-company">Jeppesen Systems (a Boeing subsidiary)</div>
-    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(Feb. 2017 - Aug. 2017)</span></div>
-    <div class="job-location">Sweden, Gothenburg</div>
-    <ul class="job-bullets">
-      <li>Manpower Application</li>
-      <li>C++11 (<code>g++</code>) - Python - C#.NET - <code>gdb</code> - Valgrind (callgrind, massif) - PDB - STL &amp; Boost - Google Test - XMLRPC - Jenkins - JIRA - Fisheye - Confluence</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-company">Adro Co.</div>
-    <div class="job-title"><span class="role">Senior Software Architect, Principal C++ Engineer</span> <span class="dates">(Jun. 2016 - Jan. 2017)</span></div>
-    <div class="job-location">Iran, Tehran</div>
-    <ul class="job-bullets">
-      <li>Realtime Bidding (RTB) Engine</li>
-      <li>C++ (<code>g++</code>) - Python - <code>gdb</code> - Valgrind - STL &amp; Boost - libuv - Google Test - Protobuf - Jenkins - Travis CI - Docker - JIRA - Fisheye</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-company">Naeem Co.</div>
-    <div class="job-title"><span class="role">Chief Technical Officer, Chief Software Architect</span> <span class="dates">(Apr. 2015 - Oct. 2016)</span></div>
-    <div class="job-location">Iran, Tehran</div>
-    <ul class="job-bullets">
-      <li><strong>Projects:</strong> ePassport Issuance System - Face Recognition System, Biometric Identification Sys.</li>
-      <li><strong>Crypto.:</strong> OpenSSL - PKCS (1, 7, 10, 11, 12) - ICAO MRTD standards - HSM - Key Mgmt. - PKCS11 Tokens</li>
-      <li><strong>Stack:</strong> C (<code>gcc</code>) - C++ (<code>g++</code>) - Java SE - Java EE - Spring MVC - Wildfly - Tomcat - Python - <code>gdb</code> - Valgrind - STL &amp; Boost - wxWidgets - Qt - Google Test - Jenkins - Docker - vSphere - Proxmox - Gluster - Cassandra - Redmine - GitLab</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-company">Sharif CERT Center</div>
-    <div class="job-title"><span class="role">Software Engineer</span> <span class="dates">(Dec. 2011 - Jun. 2013)</span></div>
-    <div class="job-location">Iran, Tehran</div>
-    <ul class="job-bullets">
-      <li>Botnet Detection System - Sinkhole - DDNS as a FreeBSD module</li>
-      <li>C++ (<code>g++</code>) - Java SE - Perl - <code>gdb</code> - JConsole - Valgrind - STL &amp; Boost - Swing - Redmine</li>
-    </ul>
-  </div>
 
   <h2 style="font-size:12pt; margin:10pt 0 0 0;">Technical authorship &amp; open source projects</h2>
   <hr>

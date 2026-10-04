@@ -7,7 +7,7 @@
 <style>
   @page {
     size: A4;
-    margin: 1cm 0 1.5cm 0;
+    margin: 1cm 0 1cm 0;
   }
 
   html, body {
@@ -18,7 +18,7 @@
   body {
     font-family: 'Latin Modern Roman', 'CMU Serif', 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
     font-size: 9pt;
-    line-height: 1.35;
+    line-height: 1.25;
     color: #000;
     max-width: 21cm;
     margin: 1cm auto 1.5cm auto;
@@ -42,7 +42,7 @@
   hr {
     border: none;
     border-top: 0.2pt solid #000;
-    margin: 2pt 0 6pt 0;
+    margin: 2pt 0 4pt 0;
   }
 
   .small {
@@ -105,7 +105,7 @@
     list-style: none;
     padding: 0;
     margin: 4pt 0 0 0;
-    font-size: 8.5pt;
+    font-size: 7.5pt;
   }
 
   ul.skills li {
@@ -240,12 +240,12 @@
   ul.plain {
     list-style: none;
     padding: 0;
-    margin: 4pt 0 0 0;
-    font-size: 8.5pt;
+    margin: 2pt 0 0 0;
+    font-size: 7.5pt;
   }
 
   ul.plain li {
-    margin: 3pt 0;
+    margin: 2pt 0;
     text-align: justify;
   }
 
@@ -287,11 +287,11 @@
     </div>
   </div>
 
-  <h2 style="font-size:11pt; margin:10pt 0 0 0;">SUMMARY</h2>
+  <h2 style="font-size:11pt; margin:7pt 0 0 0;">SUMMARY</h2>
   <hr>
-  <p class="summary">With over 20 years of professional experience across software development and systems architecture, I have built and led the design of cloud-based distributed systems that meet exacting requirements for security, availability, robustness, and fault tolerance. Grounded in a computer science background, I have combined hands-on engineering with architectural leadership, remaining directly involved in coding critical components to ensure my architectural decisions are informed by implementation reality. My core expertise lies in systems-level programming languages, including C, C++, Golang, and Rust, complemented by extensive DevOps experience spanning Bash, Docker, Kubernetes, Helm, and AWS/GCP infrastructure. I have also worked extensively in start-up environments, building and scaling backend services and APIs under fast-moving product timelines, and have advised blockchain start-ups on the design and implementation of complex on-chain financial logic using Solidity. Beyond hands-on delivery, I consult companies on systems and solutions architecture, CTO-level technology strategy, blockchain adoption, and the integration of AI into engineering and business processes.</p>
+  <p class="summary">With over 15 years of experience across software development and systems architecture, I have worked across startups, large corporations, and consulting engagements as an engineer, Tech Lead, CTO, board member, and founder of my own software company, giving me first-hand insight into the technical, financial, and organizational dynamics of software firms at every scale. Grounded in a computer science background, I combine hands-on engineering with architectural leadership, remaining directly involved in coding critical components so my architectural decisions stay informed by implementation reality. My core expertise lies in systems-level languages, including C, C++, Golang, and Rust, complemented by extensive DevOps experience spanning Kubernetes and AWS/GCP. Having witnessed organizational dysfunction firsthand, I bring that insight to the systems architecture, CTO-level strategy, and blockchain/AI consulting I provide today.</p>
 
-  <h2 style="font-size:11pt; margin:10pt 0 0 0;">CAREER</h2>
+  <h2 style="font-size:11pt; margin:7pt 0 0 0;">CAREER</h2>
   <hr>
 
   <div class="career-columns">
@@ -385,10 +385,7 @@
   </div>
   </div>
 
-  <h2 style="font-size:11pt; margin:10pt 0 0 0;" class="career-columns-page2">CAREER</h2>
-  <hr>
-
-  <div class="career-columns">
+  <div class="career-columns career-columns-page2">
   <div class="career-col">
 
   <div class="job">
@@ -475,53 +472,44 @@
   </div>
   </div>
 
-  <h2 style="font-size:11pt; margin:10pt 0 0 0;">TECHNICAL SKILLS</h2>
+  <h2 style="font-size:11pt; margin:7pt 0 0 0;">TECHNICAL SKILLS</h2>
   <hr>
   <ul class="skills">
-    <li><strong>Programming Languages:</strong> C++ (14, 17, 20) - C - Golang - Rust - JS (ES5, ES6) - Java (11+) - Python (2, 3) - Perl</li>
-    <li><strong>Blockchain Development:</strong> Solidity (EVM chains) - Solana - web3 (ethers.js, web3.js) - Hardhat</li>
-    <li><strong>Architecture Concepts:</strong> ACID - CAP - In-memory and Dist. caches - Distributed key-value stores - Replication - Fault tolerance - Leader election - Dist. locks - Dist. file systems - Streaming - Micro-batching - CQRS - Event Sourcing - Message Queues - Green threads - Event loops and async programming - Load balancers</li>
-    <li><strong>Data Storage:</strong> PostgreSQL - MySQL - MongoDB - Redis - Dist. ledgers (blockchains)</li>
-    <li><strong>Kubernetes:</strong> <code>kubectl</code> - <code>k9s</code> - Helm - Kustomize - Configuring resources such as ingress, pod, deployment, replica set, secrets, pod security policies, pod security admission (PSA) as of 1.25 - Migration from earlier versions to 1.23 and 1.25</li>
-    <li><strong>Amazon AWS &amp; Google Cloud (GCP):</strong> <code>awscli</code> - <code>eksctl</code> - <code>gcloud</code> - Configuring resources such as EC2 instances, EBS volumes, EFS, S3, ALBs, EKS, IAM, GCE, GKE, Cloud Storage, VPC, etc</li>
-    <li><strong>Serialization &amp; RPC:</strong> Protobuf - gRPC - ZeroMQ - Thrift - JSON over REST - SOAP - Java RMI - XMLRPC</li>
-    <li><strong>Standards:</strong> SUS and POSIX - PKCS standards - JavaEE (JPA, JSM, EJB, Java Servlets, JAX-WS, JAX-RS, etc) - RFCs (ASN.1, IP, TCP, UDP, DNS, HTTP, CMS, etc), ERCs (20, 721, 1155, 165, 2981, 2535, ...)</li>
-    <li><strong>Cryptography:</strong> OpenSSL - Symmetric algos (DES, 3DES, AES) - Asymmetric algos (RSA, ECC, DH) - SSL - PKI (CA, Digital Signature, PKCS certs, HSMs and Crypto. Tokens) - Wrap Keys - Key Derivation Algorithms - Hash algos - MAC algos - Error Detection (Crypto. Hashes), studying for CISSP certificate</li>
-    <li><strong>Computer Networks:</strong> OSI &amp; Internet Protocol Suite, Packet Switching, Error Detection &amp; Correction (Checksum, CRC, ARQ, FEC), L3 protocols (ICMP, IP) - L4 protocols (UDP, TCP) - Socket Programming - L3 programming (<code>libpcap</code>, JNetPcap) - Wireshark analysis - Penetration Testing - <code>tcpdump</code></li>
-    <li><strong>Kernel Development:</strong> Linux Modules - Linux System Calls</li>
-    <li><strong>Machine Learning:</strong> CUDA Dev. - Tensorflow (C++ &amp; Python) - OpenCV (C, C++, Python) - Supervised &amp; Unsupervised Learning - Reinforced Learning - Deep Learning - Locality Sensitive Hashes - Iris Code - Gabor filter - Feature Selection &amp; Extraction</li>
+    <li><strong>Languages &amp; Architecture:</strong> C++ (14/17/20), C, Golang, Rust, Python, Java, JS - Distributed systems (CAP, replication, leader election, CQRS, event sourcing, message queues, streaming, async/event loops)</li>
+    <li><strong>Cloud &amp; DevOps:</strong> Kubernetes (<code>kubectl</code>, Helm, Kustomize, PSA) - AWS &amp; GCP (EKS/GKE, EC2/GCE, S3, VPC, IAM) - Docker - PostgreSQL, MySQL, MongoDB, Redis</li>
+    <li><strong>Blockchain:</strong> Solidity (EVM chains), Solana, web3.js/ethers.js, Hardhat - Distributed ledgers, smart contract architecture</li>
+    <li><strong>Security &amp; Cryptography:</strong> OpenSSL, PKI, symmetric/asymmetric algos, hashing/MAC - Protocols &amp; standards (gRPC, Protobuf, REST, PKCS, RFCs) - Networking (TCP/IP, Wireshark, <code>tcpdump</code>) - CISSP (in progress)</li>
+    <li><strong>Other:</strong> Linux kernel modules &amp; system calls - Machine learning (TensorFlow, OpenCV, CUDA)</li>
   </ul>
 
-  <h2 style="font-size:11pt; margin:10pt 0 0 0;">Technical authorship &amp; open source projects</h2>
+  <h2 style="font-size:11pt; margin:7pt 0 0 0;">Technical authorship &amp; open source projects</h2>
   <hr>
   <ul class="plain">
-    <li><a href="https://www.amazon.com/Extreme-Taking-Concurrency-advanced-capabilities/dp/1789343623"><strong>Extreme C:</strong></a> My first book was published in October 2019 by Packt Publication.</li>
-    <li><a href="https://www.manning.com/liveproject/linux-two-step-authentication-with-rust"><strong>Linux Two-Step Authentication with Rust:</strong></a> A liveProject published by Manning Publications that walks through the students and makes them able to use Rust to develop a two-step verification system for authentication services.</li>
-    <li><a href="https://github.com/kamcpp/ess_backend"><strong>Encryptizer Simurgh Software (ESS) Backend Project</strong></a>: Rust RESTful backend written for the Manning liveProject</li>
-    <li><a href="https://github.com/kamcpp/ess_clients"><strong>Encryptizer Simurgh Software (ESS) Clients Project</strong></a>: Rust REST client written for the Manning liveProject</li>
-    <li><a href="https://bitbucket.org/kamcpp/dcs_engine/src/master/"><strong>Domain Catcher Engine</strong></a>: Written in Rust meant to send EPP request to catch the dropped domains</li>
-    <li><a href="https://github.com/marirs/msg-parser-rs"><strong>Outlook Email Message (.msg) parser</strong></a>: Written in Rust</li>
+    <li><strong>The Software Ecology</strong> (to be published): Examines the software industry as a socio-technical ecology, where companies, teams, and regulators interact through human behavior, power, and organizational dynamics as much as technology.</li>
+    <li><a href="https://www.amazon.com/Extreme-Taking-Concurrency-advanced-capabilities/dp/1789343623"><strong>Extreme C:</strong></a> Book published October 2019 by Packt Publication.</li>
+    <li><a href="https://www.manning.com/liveproject/linux-two-step-authentication-with-rust"><strong>Linux Two-Step Authentication with Rust:</strong></a> liveProject for Manning Publications, with its accompanying <a href="https://github.com/kamcpp/ess_backend">ESS backend</a> and <a href="https://github.com/kamcpp/ess_clients">client</a> projects in Rust.</li>
+    <li><strong>Other Rust projects:</strong> <a href="https://bitbucket.org/kamcpp/dcs_engine/src/master/">Domain Catcher Engine</a> and the <a href="https://github.com/marirs/msg-parser-rs">Outlook .msg parser</a>.</li>
   </ul>
 
-  <h2 style="font-size:11pt; margin:10pt 0 0 0;">FOREIGN LANGUAGES</h2>
+  <h2 style="font-size:11pt; margin:6pt 0 0 0;">FOREIGN LANGUAGES</h2>
   <hr>
-  <p style="font-size:8.5pt; margin:4pt 0 0 0;">Persian (<strong>Native</strong>), English (<strong>Fluent</strong>), French (<strong>A1</strong>), Dutch (<strong>A2</strong>)</p>
+  <p style="font-size:7.5pt; margin:4pt 0 0 0;">Persian (<strong>Native</strong>), English (<strong>Fluent</strong>), French (<strong>A1</strong>), Dutch (<strong>A2</strong>)</p>
 
-  <h2 style="font-size:11pt; margin:10pt 0 0 0;">EDUCATION</h2>
+  <h2 style="font-size:11pt; margin:6pt 0 0 0;">EDUCATION</h2>
   <hr>
   <ul class="plain">
-    <li>(2017 - Present) <strong>Bachelor of Science in Physics (Astronomy and Planetary Science)</strong> at The Open University</li>
+    <li>(2017 - 2022) <strong>Bachelor of Science in Physics (Astronomy and Planetary Science)</strong> at The Open University</li>
     <li>(2004 - 2008) <strong>Bachelor of Software Engineering</strong> at University of Isfahan (Isfahan, Iran)</li>
   </ul>
 
-  <h2 style="font-size:11pt; margin:10pt 0 0 0;">PERSONAL INTERESTS</h2>
+  <h2 style="font-size:11pt; margin:6pt 0 0 0;">PERSONAL INTERESTS</h2>
   <hr>
   <ul class="plain">
     <li><strong>Physics and Astronomy</strong>: Cosmology, Astronomy, Quantum Physics, Quantum Mechanics, Particle Physics, Special and General Relativity, Theory of Everything, Photonics.</li>
     <li><strong>Mathematics</strong>: Linear and Abstract Algebra, Probability Theory, Information Theory</li>
     <li><strong>Cryptography</strong>: Information Security, Network Security, Security Algorithms, Quantum Information Theory, Quantum Key Distribution, Quantum Cryptography</li>
     <li><strong>Philosophy</strong>: Western Philosophy, Sociology, Economics, Politics and Humanities</li>
-    <li><strong>Telecommunications</strong>: Modulation, Multiplexing, Codes, Telecommunication circuits, Photonics and optical fibers, IEEE 802.3 Protocols, Information Theory, Coding Theory, Computer Networks, etc</li>
+    <li><strong>Telecommunications</strong>: Modulation, Multiplexing, Photonics, optical fibers, IEEE 802.3, Coding Theory</li>
   </ul>
 
 </body>

@@ -51,6 +51,7 @@
 
   .header-line {
     margin: 1pt 0;
+    line-height: 9.4pt;
   }
 
   .header-indent {
@@ -81,16 +82,22 @@
 
   .contact-block {
     flex: 0 0 auto;
-    margin: 18pt 0 0 0;
+    margin: 9pt 0 0 0;
     text-align: right;
   }
 
   .contact-block div {
     margin: 1pt 0;
+    line-height: 9.4pt;
+  }
+
+  .contact-block > div:first-child {
+    line-height: 12pt;
   }
 
   .contact-block code {
     color: #777;
+    line-height: 0;
     font-weight: bold;
   }
 
@@ -98,6 +105,7 @@
     display: grid;
     grid-template-columns: max-content max-content;
     column-gap: 0.3em;
+    row-gap: 1pt;
     justify-content: end;
     margin: 1pt 0;
   }

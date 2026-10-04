@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="refresh" content="2">
-<title>Kamran (Kam) Amini - CV</title>
+<title>Kamran Amini - CV</title>
 <style>
   @page {
     size: A4;
@@ -147,7 +147,8 @@
     line-height: 1.25;
   }
 
-  .career-columns:not(.career-columns-page2) {
+  .career-columns,
+  .career-columns-page2 {
     align-items: stretch;
   }
 
@@ -168,6 +169,10 @@
   .career-col:first-child {
     border-left: none;
     padding-left: 0;
+  }
+
+  .career-columns-page2 .career-col {
+    padding-bottom: 10pt;
   }
 
   .job {
@@ -292,7 +297,7 @@
 
   <div class="top-section">
     <div class="name-block">
-      <h1>Kamran (Kam) Amini</h1>
+      <h1>Kamran Amini</h1>
       <div class="header-line small">Senior Systems &amp; Solutions Architect</div>
       <div class="header-line small">Independent Consultant</div>
       <div class="header-line small header-indent"><span class="tick"></span>CTO Advisory &amp; Strategic Decision Making</div>
@@ -484,10 +489,11 @@
 
   <div class="job">
     <div class="job-company">Sharif CERT Center</div>
-    <div class="job-title"><span class="role">Software Engineer</span></div>
+    <div class="job-title"><span class="role">Software Engineer, CERT Team Member</span></div>
     <div class="job-dates">December 2011 - June 2013</div>
     <div class="job-location">Tehran, Iran</div>
     <ul class="job-bullets">
+      <li>Member of the Computer Emergency Response Team (CERT), building the tooling used to detect, analyze, and contain network threats.</li>
       <li>Botnet Detection System - Sinkhole - DDNS as a FreeBSD module</li>
       <li>C++ (<code>g++</code>) - Java SE - Perl - <code>gdb</code> - JConsole - Valgrind - STL &amp; Boost - Swing - Redmine</li>
     </ul>

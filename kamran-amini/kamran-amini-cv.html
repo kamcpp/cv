@@ -52,10 +52,15 @@
   .header-line {
     margin: 1pt 0;
     line-height: 9.4pt;
+    white-space: nowrap;
   }
 
   .header-indent {
-    margin-left: 1.2em;
+    margin-left: 0;
+  }
+
+  .header-line:not(.header-indent) + .header-indent {
+    margin-top: 11.4pt;
   }
 
   .tick {
@@ -299,12 +304,11 @@
     <div class="name-block">
       <h1>Kamran Amini</h1>
       <div class="header-line small">Senior Systems &amp; Solutions Architect</div>
-      <div class="header-line small">Independent Consultant</div>
-      <div class="header-line small header-indent"><span class="tick"></span>CTO Advisory &amp; Strategic Decision Making</div>
-      <div class="header-line small header-indent"><span class="tick"></span>Systems &amp; Solutions Architecture</div>
-      <div class="header-line small header-indent"><span class="tick"></span>Blockchain &amp; AI Adoption</div>
-      <div class="header-line small header-indent"><span class="tick"></span>Data &amp; Network Security</div>
-      <div class="header-line small">Author of Books &amp; Articles on Software Engineering</div>
+      <div class="header-line small">Architecture &amp; Technology Advisor to CTOs</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Architected RWA exchange, settlement, custody, and treasury systems for multiple fintech clients</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Hands-on CTO, founder, and tech lead; led engineering teams of various sizes</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Building self-hosted AI platforms end to end, from model serving to GPU infrastructure</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Published author in systems programming (<em>Extreme C</em>, Packt; Manning liveProject)</div>
     </div>
 
     <div class="contact-block small">
@@ -323,7 +327,7 @@
 
   <h2 style="font-size:11pt; margin:7pt 0 0 0;">SUMMARY</h2>
   <hr>
-  <p class="summary">With 15+ years of experience across software development and systems architecture, I have worked in startups, large corporations, and consulting engagements as an engineer, Tech Lead, CTO, board member, and founder, giving me first-hand insight into the technical, financial, and organizational dynamics of software firms at every scale. I combine hands-on engineering with architectural leadership, coding critical components myself so my decisions stay informed by implementation reality. My core expertise lies in systems-level languages (C, C++, Golang, Rust), plus DevOps on Kubernetes and AWS/GCP. In blockchain and fintech, I architected tokenized-securities (RWA) infrastructure (on-chain exchange and auction engines with atomic settlement, a central securities depository, brokerage and custody) plus ERC-20/ERC-721 token and NFT platforms. I now build AI platforms end to end (self-hosted LLMs, vision and diffusion models, LoRA training) and work daily with AI coding agents (Claude, Codex, Gemini). My background is in data and network security, and I treat security and privacy as first-class citizens in my architecture and consulting. I bring this combined perspective to the systems architecture, CTO-level strategy, and blockchain/AI consulting I provide today.</p>
+  <p class="summary">Hands-on CTO-level systems architect with 15+ years across startups, large corporations, and consulting, as engineer, Tech Lead, CTO, board member, and founder. I de-risk complex fintech, blockchain, AI, and security platforms from strategy to production, coding critical components myself so architectural decisions stay grounded in implementation reality. Recent work: tokenized-securities (RWA) infrastructure (on-chain exchange and auction engines with atomic settlement, a central securities depository, custody, and treasury) and self-hosted AI platforms (LLMs, diffusion models, LoRA training). Core stack: C, C++, Golang, and Rust on Kubernetes and AWS/GCP, with a background in data and network security.</p>
 
   <h2 style="font-size:11pt; margin:7pt 0 0 0;">WORK EXPERIENCE</h2>
   <hr>
@@ -334,7 +338,7 @@
   <div class="job">
     <div class="job-company">DeKrypt B.V.</div>
     <div class="job-title"><span class="role">Founder, CEO &amp; CTO, Principal Architect &amp; Consultant</span></div>
-    <div class="job-dates">March 2024 - Present (alongside employment, with consent)</div>
+    <div class="job-dates">March 2024 - Present</div>
     <div class="job-location">Amsterdam, The Netherlands</div>
     <ul class="job-bullets job-detail-grouped">
       <li><span class="item-title">Consultancy:</span> Delivering all part-time architecture engagements listed in this CV through the firm (freelance before its founding).</li>
@@ -419,6 +423,7 @@
     <div class="job-location">Hilversum, The Netherlands - one company, many reorganizations</div>
     <ul class="job-bullets job-detail-grouped">
       <li><span class="item-title">CloudTV (Video Stitching Engine):</span> Low-latency cloud renderer/streamer delivering UI and audio/video to set-top boxes.</li>
+      <li><span class="item-title">Media Pipelines:</span> Built audio/video pipelines on MPEG-TS and H.264 with ffmpeg, including CEA-608/708 closed captions carried in SEI.</li>
     </ul>
   </div>
 
@@ -430,7 +435,6 @@
 
   <div class="job" style="margin-top:0;">
     <ul class="job-bullets job-detail-grouped">
-      <li><span class="item-title">Media Pipelines:</span> Built audio/video pipelines on MPEG-TS and H.264 with ffmpeg, including CEA-608/708 closed captions carried in SEI.</li>
       <li><span class="item-title">AppCloud:</span> Containerized Android streaming platform with a Kubernetes (AWS EKS) backend, provisioned with Terraform and shipped through CI/CD.</li>
       <li><span class="item-title">Multiview Engine:</span> High-throughput cloud streamer broadcasting multiple channels at once to set-top boxes and TVs.</li>
       <li><span class="item-title">Tech Council &amp; Security Guild:</span> Prioritized tech debt; drove threat modeling and secure SDLC across teams.</li>

@@ -7,7 +7,7 @@
 <style>
   @page {
     size: A4;
-    margin: 2cm 0 1.5cm 0;
+    margin: 1cm 0 1.5cm 0;
   }
 
   html, body {
@@ -118,25 +118,38 @@
   }
 
   .career-columns {
-    column-count: 2;
-    column-gap: 1cm;
-    column-rule: 0.2pt solid #999;
+    display: flex;
+    gap: 0.5cm;
+  }
+
+  .career-col {
+    flex: 1 1 50%;
+    min-width: 0;
+    border-left: 0.2pt solid #999;
+    padding-left: 0.5cm;
+    text-align: left;
+    hyphens: none;
+  }
+
+  .career-col:first-child {
+    border-left: none;
+    padding-left: 0;
   }
 
   .job {
-    margin-top: 10pt;
+    margin-top: 6pt;
     break-inside: avoid;
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
   }
 
   .job-company {
-    font-size: 9pt;
+    font-size: 8pt;
     font-weight: bold;
   }
 
   .job-company-renamed {
-    font-size: 9pt;
+    font-size: 8pt;
     margin-left: 1.4em;
   }
 
@@ -164,7 +177,7 @@
   }
 
   .job-title {
-    font-size: 9pt;
+    font-size: 7.5pt;
     margin: 2pt 0 0 2.2em;
   }
 
@@ -172,11 +185,14 @@
     font-weight: bold;
   }
 
-  .job-title .dates {
+  .job-dates {
+    font-size: 7.5pt;
     font-style: italic;
+    margin: 1pt 0 0 2.2em;
   }
 
   .job-location {
+    font-size: 7.5pt;
     margin: 1pt 0 0 2.2em;
   }
 
@@ -184,7 +200,7 @@
     list-style: none;
     padding: 0;
     margin: 3pt 0 0 2.9em;
-    font-size: 8pt;
+    font-size: 7.5pt;
   }
 
   ul.job-bullets li .item-title {
@@ -194,7 +210,7 @@
 
   ul.job-bullets li {
     margin: 2pt 0;
-    text-align: justify;
+    text-align: left;
   }
 
   ul.job-bullets li::before {
@@ -273,6 +289,54 @@
   <hr>
 
   <div class="career-columns">
+  <div class="career-col">
+
+  <div class="job">
+    <div class="job-company">Vero Labs Inc.</div>
+    <div class="job-title"><span class="role">Senior Blockchain Architect (Part-time consultancy)</span></div>
+    <div class="job-dates">April 2024 - September 2026</div>
+    <div class="job-location">United States, New York</div>
+  </div> 
+
+  <div class="job">
+    <div class="job-company">Tokenise Ltd</div>
+    <div class="job-title"><span class="role">Senior Blockchain Architect (Part-time consultancy)</span></div>
+    <div class="job-dates">April 2024 - September 2026</div>
+    <div class="job-location">United Kingdom, London</div>
+  </div> 
+
+  <div class="job">
+    <div class="job-company">VeroPulse GmbH</div>
+    <div class="job-title"><span class="role">Chief Software Architect (Part-time consultancy)</span></div>
+    <div class="job-dates">April 2024 - September 2026</div>
+    <div class="job-location">Austria, Vienna</div>
+
+  </div>  
+
+  <div class="job">
+    <div class="job-company">Metapolitan Ltd.</div>
+    <div class="job-title"><span class="role">Chief Blockchain Architect (Part-time consultancy)</span></div>
+    <div class="job-dates">January 2025 - March 2026</div>
+    <div class="job-location">United Kingdom, London</div>
+    <ul class="job-bullets job-detail-grouped">
+      <li><span class="item-title">Distributed Treasury System:</span> Architected a multi-signature, on-chain treasury platform for fintech clients, enabling secure custody, automated settlement, and policy-driven fund controls across multiple blockchain networks.</li>
+      <li>Solidity - Gnosis Safe (multi-sig) - EVM chains - web3.js - Hardhat - Node.js</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Digital First GmbH</div>
+    <div class="job-title"><span class="role">Senior Blockchain Architect (Part-time consultancy)</span></div>
+    <div class="job-dates">December 2023 - September 2026</div>
+    <div class="job-location">Austria, Vienna</div>
+    <ul class="job-bullets job-detail-grouped">
+      <li><span class="item-title">TheKiss NFT Tokenization Platform:</span> Designed the NFT minting architecture and smart contract framework underpinning the platform's digital collectibles.</li>
+      <li><span class="item-title">ARTEQ Token:</span> Architected the ERC-20 token economics and smart contract suite for the art-backed digital asset.</li>
+      <li><span class="item-title">QLINDO Token:</span> Led smart contract architecture and security review for the project's token launch.</li>
+      <li><span class="item-title">Herg&eacute; NFTs:</span> Architected the ERC-721 minting and royalty framework for the licensed NFT collection.</li>
+      <li>Solidity - EVM chains - ERC-20 - ERC-721 - Hardhat - OpenZeppelin</li>
+    </ul>
+  </div>  
 
   <div class="job">
     <div class="job-company">ActiveVideo BV <span class="company-dates">(April 2019 - February 2023)</span></div>
@@ -291,10 +355,14 @@
     </ul>
   </div>
 
+  </div>
+  <div class="career-col">
+
   <div class="job">
     <div class="job-company">TomTom BV</div>
-    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(Sept. 2017 - March. 2019)</span></div>
-    <div class="job-location">Netherlands, Amsterdam</div>
+    <div class="job-title"><span class="role">Senior Software Engineer</span></div>
+    <div class="job-dates">September 2017 - March 2019</div>
+    <div class="job-location">The Netherlands, Amsterdam</div>
     <ul class="job-bullets">
       <li><span class="item-title">Expert Software Consultant from Modis B.V.</span></li>
       <li><span class="item-title">NavKit Free Text Search Engine, Navkit Worker REST Services, POI Info Services</span></li>
@@ -304,7 +372,8 @@
 
   <div class="job">
     <div class="job-company">Jeppesen Systems (a Boeing subsidiary)</div>
-    <div class="job-title"><span class="role">Senior Software Engineer</span> <span class="dates">(Feb. 2017 - Aug. 2017)</span></div>
+    <div class="job-title"><span class="role">Senior Software Engineer</span></div>
+    <div class="job-dates">February 2017 - August 2017</div>
     <div class="job-location">Sweden, Gothenburg</div>
     <ul class="job-bullets">
       <li><span class="item-title">Manpower Application</span></li>
@@ -314,7 +383,8 @@
 
   <div class="job">
     <div class="job-company">Adro Co.</div>
-    <div class="job-title"><span class="role">Senior Software Architect, Principal C++ Engineer</span> <span class="dates">(Jun. 2016 - Jan. 2017)</span></div>
+    <div class="job-title"><span class="role">Senior Software Architect, Principal C++ Engineer</span></div>
+    <div class="job-dates">June 2016 - January 2017</div>
     <div class="job-location">Iran, Tehran</div>
     <ul class="job-bullets">
       <li><span class="item-title">Realtime Bidding (RTB) Engine</span></li>
@@ -324,7 +394,8 @@
 
   <div class="job">
     <div class="job-company">Naeem Co.</div>
-    <div class="job-title"><span class="role">Chief Technical Officer, Chief Software Architect</span> <span class="dates">(Apr. 2015 - Oct. 2016)</span></div>
+    <div class="job-title"><span class="role">Chief Technical Officer, Chief Software Architect</span></div>
+    <div class="job-dates">April 2015 - October 2016</div>
     <div class="job-location">Iran, Tehran</div>
     <ul class="job-bullets">
       <li><span class="item-title">Projects:</span> ePassport Issuance System - Face Recognition System, Biometric Identification Sys.</li>
@@ -335,7 +406,8 @@
 
   <div class="job">
     <div class="job-company">Sharif CERT Center</div>
-    <div class="job-title"><span class="role">Software Engineer</span> <span class="dates">(Dec. 2011 - Jun. 2013)</span></div>
+    <div class="job-title"><span class="role">Software Engineer</span></div>
+    <div class="job-dates">December 2011 - June 2013</div>
     <div class="job-location">Iran, Tehran</div>
     <ul class="job-bullets">
       <li><span class="item-title">Botnet Detection System - Sinkhole - DDNS as a FreeBSD module</span></li>
@@ -343,6 +415,7 @@
     </ul>
   </div>
 
+  </div>
   </div>
 
   <h2 style="font-size:11pt; margin:10pt 0 0 0;">TECHNICAL SKILLS</h2>

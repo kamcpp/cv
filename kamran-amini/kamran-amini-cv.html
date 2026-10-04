@@ -7,7 +7,7 @@
 <style>
   @page {
     size: A4;
-    margin: 1.5cm 0 1cm 0;
+    margin: 1cm 0 0.8cm 0;
   }
 
   html, body {
@@ -57,6 +57,16 @@
     margin-left: 1.2em;
   }
 
+  .tick {
+    display: inline-block;
+    width: 0.28em;
+    height: 0.58em;
+    border: solid #000;
+    border-width: 0 0.07em 0.07em 0;
+    transform: rotate(45deg);
+    margin: 0 0.75em 0.08em 0.25em;
+  }
+
   .top-section {
     display: flex;
     justify-content: space-between;
@@ -73,10 +83,15 @@
     flex: 0 0 auto;
     margin: 10pt 0 0 0;
     text-align: right;
+    font-weight: bold;
   }
 
   .contact-block div {
     margin: 1pt 0;
+  }
+
+  .contact-block code {
+    color: #777;
   }
 
   .email-grid {
@@ -272,10 +287,10 @@
       <h1>Kamran Amini</h1>
       <div class="header-line small">Senior Systems &amp; Solutions Architect</div>
       <div class="header-line small">Independent Consultant</div>
-      <div class="header-line small header-indent">&#10003;&nbsp; CTO Advisory &amp; Strategic Decision Making</div>
-      <div class="header-line small header-indent">&#10003;&nbsp; Systems &amp; Solutions Architecture</div>
-      <div class="header-line small header-indent">&#10003;&nbsp; Blockchain &amp; AI Adoption</div>
-      <div class="header-line small header-indent">&#10003;&nbsp; Data &amp; Network Security</div>
+      <div class="header-line small header-indent"><span class="tick"></span>CTO Advisory &amp; Strategic Decision Making</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Systems &amp; Solutions Architecture</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Blockchain &amp; AI Adoption</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Data &amp; Network Security</div>
       <div class="header-line small">Author of Books &amp; Articles on Software Engineering</div>
     </div>
 
@@ -294,7 +309,7 @@
 
   <h2 style="font-size:11pt; margin:7pt 0 0 0;">SUMMARY</h2>
   <hr>
-  <p class="summary">With over 15 years of experience across software development and systems architecture, I have worked across startups, large corporations, and consulting engagements as an engineer, Tech Lead, CTO, board member, and founder of my own software company, giving me first-hand insight into the technical, financial, and organizational dynamics of software firms at every scale. Grounded in a computer science background, I combine hands-on engineering with architectural leadership, remaining directly involved in coding critical components so my architectural decisions stay informed by implementation reality. My core expertise lies in systems-level languages, including C, C++, Golang, and Rust, complemented by extensive DevOps experience spanning Kubernetes and AWS/GCP. Having witnessed organizational dysfunction firsthand, I bring that insight to the systems architecture, CTO-level strategy, and blockchain/AI consulting I provide today.</p>
+  <p class="summary">With over 15 years of experience across software development and systems architecture, I have worked across startups, large corporations, and consulting engagements as an engineer, Tech Lead, CTO, board member, and founder of my own software company, giving me first-hand insight into the technical, financial, and organizational dynamics of software firms at every scale. I combine hands-on engineering with architectural leadership, coding critical components myself so my architectural decisions stay informed by implementation reality. My core expertise lies in systems-level languages (C, C++, Golang, Rust), plus extensive DevOps experience with Kubernetes and AWS/GCP. In blockchain and fintech, I have architected tokenised-securities infrastructure (on-chain exchange and auction engines with atomic settlement, a central securities depository, brokerage and custody) alongside ERC-20/ERC-721 token and NFT platforms. More recently I build AI platforms end to end (self-hosted LLMs, vision and diffusion models, LoRA training) and work daily with AI coding agents (Claude, Codex, Gemini). Having witnessed organizational dysfunction firsthand, I bring that insight to the systems architecture, CTO-level strategy, and blockchain/AI consulting I provide today.</p>
 
   <h2 style="font-size:11pt; margin:7pt 0 0 0;">CAREER</h2>
   <hr>
@@ -448,7 +463,7 @@
     <div class="job-location">Iran, Tehran</div>
     <ul class="job-bullets">
       <li><span class="item-title">Projects:</span> ePassport Issuance System - Face Recognition System, Biometric Identification Sys.</li>
-      <li><span class="item-title">Crypto.:</span> OpenSSL - PKCS (1, 7, 10, 11, 12) - ICAO MRTD standards - HSM - Key Mgmt. - PKCS11 Tokens</li>
+      <li><span class="item-title">Cryptography:</span> OpenSSL - PKCS (1, 7, 10, 11, 12) - ICAO MRTD standards - HSM - Key Mgmt. - PKCS11 Tokens</li>
       <li><span class="item-title">Stack:</span> C (<code>gcc</code>) - C++ (<code>g++</code>) - Java SE - Java EE - Spring MVC - Wildfly - Tomcat - Python - <code>gdb</code> - Valgrind - STL &amp; Boost - wxWidgets - Qt - Google Test - Jenkins - Docker - vSphere - Proxmox - Gluster - Cassandra - Redmine - GitLab</li>
     </ul>
   </div>
@@ -474,6 +489,7 @@
     <li><strong>Cloud &amp; DevOps:</strong> Kubernetes (<code>kubectl</code>, Helm, Kustomize, PSA) - AWS &amp; GCP (EKS/GKE, EC2/GCE, S3, VPC, IAM) - Docker - PostgreSQL, MySQL, MongoDB, Redis</li>
     <li><strong>Blockchain:</strong> Solidity (EVM chains), Solana, web3.js/ethers.js, Hardhat - Distributed ledgers, smart contract architecture</li>
     <li><strong>Security &amp; Cryptography:</strong> OpenSSL, PKI, symmetric/asymmetric algos, hashing/MAC - Protocols &amp; standards (gRPC, Protobuf, REST, PKCS, RFCs) - Networking (TCP/IP, Wireshark, <code>tcpdump</code>) - CISSP (in progress)</li>
+    <li><strong>AI &amp; LLMs:</strong> Self-hosted LLM/VLM &amp; diffusion pipelines (Qwen, FLUX, Diffusers, Ollama) - LoRA training, identity conditioning (PuLID/IP-Adapter, face embeddings), inpainting, prompt compilation, agent memory, elastic GPU serving - Agentic coding &amp; review with Claude, Codex, and Gemini</li>
     <li><strong>Other:</strong> Linux kernel modules &amp; system calls - Machine learning (TensorFlow, OpenCV, CUDA)</li>
   </ul>
 

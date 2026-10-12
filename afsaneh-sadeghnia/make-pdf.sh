@@ -24,7 +24,7 @@ echo "Wrote $PDF_FILE"
 
 xattr -d com.apple.quarantine "$PDF_FILE" 2>/dev/null || true
 
-open "$PDF_FILE"
+open -a Preview "$PDF_FILE"
 
 # Preview re-adds the quarantine flag whenever it (re)loads the file, which can
 # happen well after this script exits, so keep clearing it in the background

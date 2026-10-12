@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="2">
+<title>Afsaneh Sadeghnia - CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 1cm 0 0.8cm 0;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Latin Modern Roman', 'CMU Serif', 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
+    font-size: 9pt;
+    line-height: 1.25;
+    color: #000;
+    max-width: 21cm;
+    margin: 1cm auto 1.5cm auto;
+    padding: 0 1.5cm;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  h1 {
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 10pt 0 0 0;
+    line-height: 1.2;
+  }
+
+  h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  hr {
+    border: none;
+    border-top: 0.2pt solid #000;
+    margin: 2pt 0 4pt 0;
+  }
+
+  .small {
+    font-size: 7.5pt;
+  }
+
+  .header-line {
+    margin: 1pt 0;
+    line-height: 9.4pt;
+    white-space: nowrap;
+  }
+
+  .header-indent {
+    margin-left: 0;
+    font-size: 8.5pt;
+  }
+
+  .header-line:not(.header-indent) + .header-indent {
+    margin-top: 11.4pt;
+  }
+
+  .tick {
+    display: inline-block;
+    width: 0.28em;
+    height: 0.58em;
+    border: solid #000;
+    border-width: 0 0.07em 0.07em 0;
+    transform: rotate(45deg);
+    margin: 0 0.75em 0.08em 0.25em;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5cm;
+    margin: 0 0 12pt 0;
+  }
+
+  .top-section .name-block {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .contact-block {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    margin: 23pt 0 0 0;
+    text-align: right;
+  }
+
+  .contact-block div {
+    margin: 1pt 0;
+    line-height: 9.4pt;
+  }
+
+  .contact-block code {
+    color: #777;
+    line-height: 0;
+    font-weight: bold;
+  }
+
+  .email-grid {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 0.3em;
+    row-gap: 1pt;
+    justify-content: end;
+    margin: 1pt 0;
+  }
+
+  .email-label {
+    text-align: right;
+  }
+
+  .email-value {
+    text-align: right;
+  }
+
+  p.summary {
+    font-size: 8.5pt;
+    text-align: justify;
+    margin: 4pt 0 0 0;
+  }
+
+  ul.skills {
+    list-style: none;
+    padding: 0;
+    margin: 4pt 0 0 0;
+    font-size: 7.5pt;
+  }
+
+  ul.skills li {
+    margin: 2pt 0;
+    text-align: justify;
+  }
+
+  ul.skills li::before {
+    content: "\2022  ";
+  }
+
+  .career-columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5cm;
+    line-height: 1.25;
+  }
+
+  .career-columns,
+  .career-columns-page2 {
+    align-items: stretch;
+  }
+
+  .career-columns-page2 {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .career-col {
+    flex: 1 1 50%;
+    min-width: 0;
+    border-left: 0.2pt solid #999;
+    padding-left: 0.5cm;
+    text-align: left;
+    hyphens: none;
+  }
+
+  .career-col:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .career-columns-page2 .career-col {
+    padding-bottom: 10pt;
+  }
+
+  .job {
+    margin-top: 6pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
+
+  .job-company {
+    font-size: 8pt;
+    font-weight: bold;
+  }
+
+  .job-company-renamed {
+    font-size: 8pt;
+    margin-left: 1.4em;
+  }
+
+  .job-company-renamed::before {
+    content: "\21B3  ";
+  }
+
+  .job-company-renamed-2 {
+    margin-left: 2.8em;
+  }
+
+  .job-company-renamed-3 {
+    margin-left: 4.2em;
+  }
+
+  .job-detail-grouped,
+  ul.job-bullets.job-detail-grouped {
+    margin-left: 2.9em;
+  }
+
+  .company-dates {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.85em;
+  }
+
+  .job-title {
+    font-size: 7.5pt;
+    margin: 2pt 0 0 2.2em;
+  }
+
+  .job-title .role {
+    font-weight: bold;
+  }
+
+  .job-dates {
+    font-size: 7.5pt;
+    font-style: italic;
+    margin: 1pt 0 0 2.2em;
+  }
+
+  .job-location {
+    font-size: 7.5pt;
+    margin: 1pt 0 0 2.2em;
+  }
+
+  ul.job-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 3pt 0 0 2.9em;
+    font-size: 7.5pt;
+  }
+
+  ul.job-bullets li .item-title {
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  ul.job-bullets li {
+    margin: 2pt 0;
+    text-align: left;
+  }
+
+  ul.job-bullets li::before {
+    content: "\2022  ";
+  }
+
+  code {
+    font-family: 'Latin Modern Mono', 'CMU Typewriter Text', 'Courier New', monospace;
+    font-size: 0.95em;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  ul.plain {
+    list-style: none;
+    padding: 0;
+    margin: 2pt 0 0 0;
+    font-size: 7.5pt;
+  }
+
+  ul.plain li {
+    margin: 2pt 0;
+    text-align: justify;
+  }
+
+  ul.plain li::before {
+    content: "\2022  ";
+  }
+
+  @media print {
+    body {
+      margin: 0 auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="top-section">
+    <div class="name-block">
+      <h1>Afsaneh Sadeghnia</h1>
+      <div class="header-line small">Software Test Engineer</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Problem Solving</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Attention to Detail</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Team Collaboration</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Continuous Learning</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Reliable and Committed</div>
+      <div class="header-line small header-indent"><span class="tick"></span>Fast Learner</div>
+    </div>
+
+    <div class="contact-block small">
+      <div>Vienna, Austria</div>
+      <div><a href="tel:+31615357770"><code>+31 (0) 615357770</code></a></div>
+      <div>Email: <a href="mailto:x.sadeghnia@gmail.com"><code>x.sadeghnia@gmail.com</code></a></div>
+      <div>GitHub: <a href="https://github.com/xsadeghnia"><code>github.com/xsadeghnia</code></a></div>
+      <div>LinkedIn: <a href="https://www.linkedin.com/in/a-sadeghnia"><code>linkedin.com/in/a-sadeghnia</code></a></div>
+    </div>
+  </div>
+
+  <h2 style="font-size:11pt; margin:7pt 0 0 0;">PROFILE</h2>
+  <hr>
+  <p class="summary">Software Test Engineer with experience in software testing and a strong background in software development. Experienced in manual and automated testing, test planning, test case design, Python, pytest, Jira and Confluence. My development background helps me understand software from both a technical and quality perspective, communicate effectively with developers, and approach problems in a structured way. I enjoy learning, improving testing processes and contributing to reliable, user-friendly software.</p>
+
+  <h2 style="font-size:11pt; margin:7pt 0 0 0;">WORK EXPERIENCE</h2>
+  <hr>
+
+  <div class="career-columns">
+  <div class="career-col">
+
+  <div class="job">
+    <div class="job-company">DeKrypt BV</div>
+    <div class="job-title"><span class="role">Software Test Engineer</span></div>
+    <div class="job-dates">June 2024 - August 2026</div>
+    <div class="job-location">Amsterdam, Netherlands</div>
+    <ul class="job-bullets job-detail-grouped">
+      <li>Developed and maintained automated tests using Python and pytest.</li>
+      <li>Created test plans, test scenarios, test cases and test reports for new features.</li>
+      <li>Performed manual, functional, integration and system testing.</li>
+      <li>Reported and tracked defects using Jira and documented testing work in Confluence.</li>
+      <li>Collaborated with developers in an Agile/Scrum environment.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Freelance</div>
+    <div class="job-title"><span class="role">Freelance Front-End Developer</span></div>
+    <div class="job-dates">July 2021 - May 2024</div>
+    <div class="job-location">Amsterdam, Netherlands</div>
+    <ul class="job-bullets job-detail-grouped">
+      <li>Developed and maintained front-end components for web projects using HTML, CSS, JavaScript and Vue.js.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Ubiqum Code Academy</div>
+    <div class="job-title"><span class="role">Junior Full Stack Java Developer</span></div>
+    <div class="job-dates">January 2020 - June 2020</div>
+    <div class="job-location">Amsterdam, Netherlands</div>
+    <ul class="job-bullets job-detail-grouped">
+      <li>Worked in Agile/Scrum with Java, Spring Boot, REST APIs, SQL, Git and unit testing.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Tehran Institute of Technology</div>
+    <div class="job-title"><span class="role">Software Developer</span></div>
+    <div class="job-dates">June 2015 - February 2017</div>
+    <div class="job-location">Tehran, Iran</div>
+    <ul class="job-bullets job-detail-grouped">
+      <li>Developed web applications using C#/.NET, ASP.NET MVC &amp; Web API, JavaScript, REST services and SQL.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-company">Tehran Institute of Technology</div>
+    <div class="job-title"><span class="role">Junior Software Developer</span></div>
+    <div class="job-dates">October 2013 - May 2015</div>
+    <div class="job-location">Tehran, Iran</div>
+    <ul class="job-bullets job-detail-grouped">
+      <li>Developed and maintained web applications using C#/.NET, ASP.NET Web Forms and HTML/CSS/JavaScript.</li>
+    </ul>
+  </div>
+
+  </div>
+  </div>
+
+  <h2 style="font-size:11pt; margin:7pt 0 0 0;">SKILLS</h2>
+  <hr>
+  <ul class="skills">
+    <li><strong>Testing:</strong> Manual Testing - Automated Testing (Python, pytest) - Test Planning &amp; Test Case Design - Functional Testing - Integration &amp; System Testing</li>
+    <li><strong>Tools &amp; Process:</strong> Defect Tracking (Jira) - Confluence - Agile / Scrum - Git / GitLab</li>
+    <li><strong>Development:</strong> Python - SQL - REST APIs</li>
+  </ul>
+
+  <h2 style="font-size:11pt; margin:6pt 0 0 0;">LANGUAGES</h2>
+  <hr>
+  <p style="font-size:7.5pt; margin:4pt 0 0 0;">Persian, English, Dutch</p>
+
+  <h2 style="font-size:11pt; margin:6pt 0 0 0;">EDUCATION</h2>
+  <hr>
+  <ul class="plain">
+    <li><strong>Bachelor Degree in IT Engineering</strong>, University of Applied Science and Technology (Tehran, Iran), 2009 - 2013</li>
+  </ul>
+
+  <h2 style="font-size:11pt; margin:6pt 0 0 0;">CERTIFICATIONS &amp; COURSES</h2>
+  <hr>
+  <ul class="plain">
+    <li><strong>Full Stack Java Development</strong>, Ubiqum Code Academy, 2020</li>
+    <li><strong>Java Nano Degree</strong>, Udacity</li>
+    <li><strong>Advanced Java Courses</strong>, LinkedIn Learning, 2018</li>
+    <li><strong>Java 8 Essential Training</strong>, 2015</li>
+  </ul>
+
+</body>
+</html>

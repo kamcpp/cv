@@ -25,3 +25,18 @@ echo "Wrote $PDF_FILE"
 xattr -d com.apple.quarantine "$PDF_FILE" 2>/dev/null || true
 
 open "$PDF_FILE"
+
+# Preview re-adds the quarantine flag whenever it (re)loads the file, which can
+# happen well after this script exits, so keep clearing it in the background
+# for a few minutes. A newer run replaces the watcher of an older one.
+WATCHER_PID_FILE="${TMPDIR:-/tmp}/kamran-amini-cv-quarantine.pid"
+if [ -f "$WATCHER_PID_FILE" ]; then
+  kill "$(cat "$WATCHER_PID_FILE")" 2>/dev/null || true
+fi
+(
+  for _ in $(seq 1 300); do
+    sleep 1
+    xattr -d com.apple.quarantine "$PDF_FILE" 2>/dev/null || true
+  done
+) >/dev/null 2>&1 &
+echo $! > "$WATCHER_PID_FILE"
